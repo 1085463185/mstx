@@ -1,0 +1,314 @@
+{
+  "keys": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\config\\config.default.js",
+  "middleware": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\config\\config.default.js",
+  "security": {
+    "csrf": {
+      "enable": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\config\\config.default.js",
+      "ignoreJSON": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\config\\config.default.js",
+      "type": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "useSession": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "cookieName": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "sessionName": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "headerName": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "bodyName": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "queryName": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "refererWhiteList": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js"
+    },
+    "domainWhiteList": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+    "protocolWhiteList": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+    "defaultMiddleware": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+    "xframe": {
+      "enable": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "value": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js"
+    },
+    "hsts": {
+      "enable": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.local.js",
+      "maxAge": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "includeSubdomains": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js"
+    },
+    "dta": {
+      "enable": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js"
+    },
+    "noopen": {
+      "enable": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js"
+    },
+    "nosniff": {
+      "enable": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "value": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js"
+    },
+    "xssProtection": {
+      "enable": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "value": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js"
+    },
+    "csp": {
+      "enable": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "policy": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js",
+      "checkAddress": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js"
+    }
+  },
+  "mysql": {
+    "client": {
+      "host": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\config\\config.default.js",
+      "port": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\config\\config.default.js",
+      "user": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\config\\config.default.js",
+      "password": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\config\\config.default.js",
+      "database": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\config\\config.default.js"
+    },
+    "default": {
+      "database": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-mysql@3.0.0@egg-mysql\\config\\config.default.js",
+      "connectionLimit": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-mysql@3.0.0@egg-mysql\\config\\config.default.js"
+    },
+    "app": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-mysql@3.0.0@egg-mysql\\config\\config.default.js",
+    "agent": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-mysql@3.0.0@egg-mysql\\config\\config.default.js"
+  },
+  "cluster": {
+    "listen": {
+      "path": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\config\\config.default.js",
+      "port": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\config\\config.default.js",
+      "hostname": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js"
+    }
+  },
+  "cors": {
+    "origin": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\config\\config.default.js",
+    "allowMethods": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\config\\config.default.js"
+  },
+  "multipart": {
+    "mode": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\config\\config.default.js",
+    "autoFields": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-multipart@2.10.3@egg-multipart\\config\\config.default.js",
+    "defaultCharset": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-multipart@2.10.3@egg-multipart\\config\\config.default.js",
+    "fieldNameSize": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-multipart@2.10.3@egg-multipart\\config\\config.default.js",
+    "fieldSize": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-multipart@2.10.3@egg-multipart\\config\\config.default.js",
+    "fields": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-multipart@2.10.3@egg-multipart\\config\\config.default.js",
+    "fileSize": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-multipart@2.10.3@egg-multipart\\config\\config.default.js",
+    "files": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-multipart@2.10.3@egg-multipart\\config\\config.default.js",
+    "fileExtensions": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-multipart@2.10.3@egg-multipart\\config\\config.default.js",
+    "whitelist": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-multipart@2.10.3@egg-multipart\\config\\config.default.js",
+    "tmpdir": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-multipart@2.10.3@egg-multipart\\config\\config.default.js",
+    "cleanSchedule": {
+      "cron": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-multipart@2.10.3@egg-multipart\\config\\config.default.js"
+    }
+  },
+  "session": {
+    "maxAge": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-session@3.2.0@egg-session\\config\\config.default.js",
+    "key": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-session@3.2.0@egg-session\\config\\config.default.js",
+    "httpOnly": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-session@3.2.0@egg-session\\config\\config.default.js",
+    "encrypt": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-session@3.2.0@egg-session\\config\\config.default.js"
+  },
+  "helper": {
+    "shtml": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-security@2.8.0@egg-security\\config\\config.default.js"
+  },
+  "jsonp": {
+    "limit": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp\\config\\config.default.js",
+    "callback": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp\\config\\config.default.js",
+    "csrf": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp\\config\\config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\config\\config.default.js",
+    "appErrorFilter": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\config\\config.default.js",
+    "templatePath": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\config\\config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\config.default.js",
+    "dirs": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\config.default.js",
+    "queryField": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\config.default.js",
+    "cookieField": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\config.default.js",
+    "cookieDomain": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\config.default.js",
+    "cookieMaxAge": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\config.default.js"
+  },
+  "watcher": {
+    "type": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-watcher@3.1.1@egg-watcher\\config\\config.local.js",
+    "eventSources": {
+      "default": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-watcher@3.1.1@egg-watcher\\config\\config.default.js",
+      "development": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-watcher@3.1.1@egg-watcher\\config\\config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-schedule@3.6.4@egg-schedule\\config\\config.default.js",
+      "file": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-schedule@3.6.4@egg-schedule\\config\\config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-schedule@3.6.4@egg-schedule\\config\\config.default.js"
+  },
+  "development": {
+    "watchDirs": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-development@2.6.0@egg-development\\config\\config.default.js",
+    "ignoreDirs": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-development@2.6.0@egg-development\\config\\config.default.js",
+    "fastReady": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-development@2.6.0@egg-development\\config\\config.default.js",
+    "reloadOnDebug": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-development@2.6.0@egg-development\\config\\config.default.js",
+    "overrideDefault": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-development@2.6.0@egg-development\\config\\config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js",
+    "hourDelimiter": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js",
+    "filesRotateBySize": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js",
+    "maxFileSize": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js",
+    "maxFiles": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js",
+    "rotateDuration": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js",
+    "maxDays": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js"
+  },
+  "static": {
+    "prefix": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "dir": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "dynamic": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "preload": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "buffer": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "maxFiles": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js"
+  },
+  "view": {
+    "root": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-view@2.1.2@egg-view\\config\\config.default.js",
+    "cache": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-view@2.1.2@egg-view\\config\\config.local.js",
+    "defaultExtension": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-view@2.1.2@egg-view\\config\\config.default.js",
+    "defaultViewEngine": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-view@2.1.2@egg-view\\config\\config.default.js",
+    "mapping": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg-view@2.1.2@egg-view\\config\\config.default.js"
+  },
+  "env": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+  "name": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+  "cookies": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+  "proxy": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+  "maxIpsCount": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+  "maxProxyCount": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+  "protocolHeaders": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+  "ipHeaders": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+  "hostHeaders": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+  "pkg": {
+    "name": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+    "version": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+    "description": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+    "private": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+    "egg": {
+      "declarations": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js"
+    },
+    "dependencies": {
+      "egg": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+      "egg-cors": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+      "egg-mysql": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+      "egg-scripts": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js"
+    },
+    "devDependencies": {
+      "autod": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+      "autod-egg": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+      "egg-bin": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+      "egg-ci": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+      "egg-mock": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+      "eslint": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+      "eslint-config-egg": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js"
+    },
+    "engines": {
+      "node": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js"
+    },
+    "scripts": {
+      "start": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+      "stop": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+      "dev": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+      "debug": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+      "test": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+      "test-local": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+      "cov": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+      "lint": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+      "ci": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+      "autod": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js"
+    },
+    "ci": {
+      "version": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js"
+    },
+    "repository": {
+      "type": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+      "url": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js"
+    },
+    "author": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+    "license": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js"
+  },
+  "baseDir": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+  "HOME": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+  "rundir": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+  "dump": {
+    "ignore": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+    "notFound": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+    "sitefile": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+    "middlewares": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+    "httpClient": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js"
+  },
+  "bodyParser": {
+    "enable": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+    "encoding": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+    "formLimit": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+    "jsonLimit": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+    "textLimit": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+    "strict": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+    "queryString": {
+      "arrayLimit": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+      "depth": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+      "parameterLimit": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js"
+    },
+    "onerror": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js"
+  },
+  "logger": {
+    "dir": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+    "encoding": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+    "env": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+    "level": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+    "consoleLevel": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+    "disableConsoleAfterReady": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+    "outputJSON": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+    "buffer": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+    "appLogName": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+    "coreLogName": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+    "agentLogName": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+    "errorLogName": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+    "coreLogger": {
+      "consoleLevel": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.local.js"
+    },
+    "allowDebugAtProd": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+    "dnsCacheLookupInterval": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+    "dnsCacheMaxLength": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+    "request": {
+      "timeout": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+      "freeSocketTimeout": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+      "maxSockets": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+      "maxFreeSockets": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+      "freeSocketTimeout": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+      "maxSockets": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+      "maxFreeSockets": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+    "logging": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js"
+  },
+  "coreMiddleware": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+  "workerStartTimeout": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+  "serverTimeout": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+  "clusterClient": {
+    "maxWaitTime": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js",
+    "responseTimeout": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js"
+  },
+  "onClientError": "D:\\hqyj\\Webpack\\vuew\\mstx_server\\node_modules\\_egg@2.27.0@egg\\config\\config.default.js"
+}
