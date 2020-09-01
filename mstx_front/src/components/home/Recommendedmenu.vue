@@ -17,7 +17,7 @@
             </div>
         </div>
         <div class="caidan">
-            <div v-for="(item, index) in caidan" :key="index">
+            <div v-for="(item, index) in caidan" :key="index"  @click="joinBuZou">
                 <div class="caidan_juti">
                     <img :src="item.src">
                     <div class="caiming">{{item.name}}</div>
@@ -50,6 +50,10 @@
             })
         },
         methods: {
+            joinBuZou(e){
+				console.log(e.target)
+				this.$router.push(`/buzou?id=${e.target.id}`)
+			},
             mtheme(omt) {
                 if(omt === 0) {
                     this.themest1="themest";

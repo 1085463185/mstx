@@ -27,33 +27,36 @@
 
             }
         },
+        mounted(){
+            console.log(this.$route)
+        },
         methods: {
             about(e) {
                 console.log(e.target.innerHTML.trim());
-                let path;
+                var path="";
                 switch(e.target.innerHTML.trim()) {
                     case "关于我们":
-                        path:"";
+                        path="/about";
                         break;
                     case "联系我们":
-                        path:"";
+                        path="";
                         break;
                     case "加入我们":
-                        path:"";
+                        path="";
                         break;
                     case "服务声明":
-                        path:"";
+                        path="";
                         break;
                     case "友情链接":
-                        path:"";
+                        path="";
                         break;
                     case "网站地图":
-                        path:"";
+                        path="";
                         break;
                     default:
                         return;
                 }
-                if(decodeURI(this.$route.fullPath) === path) {
+                if(decodeURI(this.$route.fullPath) == path) {
                     // 重复点击相同的按钮，不会push，直接刷新页面
                     this.$router.go(0);
                 } else {

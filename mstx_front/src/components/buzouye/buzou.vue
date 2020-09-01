@@ -24,7 +24,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 	.buzou{
 		width: 990px;
 		margin: 10px auto;

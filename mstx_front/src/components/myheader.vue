@@ -42,38 +42,38 @@
       },
       goPage(e) {
         var path;
-        // switch (e.target.innerHTML.trim()) {
-        //   case "首页":
-        //     path = "/";
-        //     break;
-        //   case "食谱":
-        //     path = "/recip";
-        //     break;
-        //   case "食材":
-        //     path = "/food";
-        //     break;
-        //   case "社区":
-        //     path = "/community";
-        //     break;
-        //   case "搜索":
-        //     path = "/search";
-        //     break;
-        //   case "注册":
-        //     path = "/sign";
-        //     break;
-        //   case "登陆":
-        //     path = "/login";
-        //     break;
-        //   // 点击到空白处不触发
-        //   default:
-        //     return;
-        // }
-        // if (decodeURI(this.$route.fullPath) === path) {
-        //   // 重复点击相同的按钮，不会push，直接刷新页面
-        //   this.$router.go(0);
-        // } else {
-        //   this.$router.push(path);
-        // }
+        switch (e.target.innerHTML.trim()) {
+          case "首页":
+            path = "/";
+            break;
+          case "食谱":
+            path = "/recip";
+            break;
+          case "食材":
+            path = "/food";
+            break;
+          case "社区":
+            path = "/community";
+            break;
+          case "搜索":
+            path = "/search";
+            break;
+          case "注册":
+            path = "/sign";
+            break;
+          case "登陆":
+            path = "/login";
+            break;
+          // 点击到空白处不触发
+          default:
+            return;
+        }
+        if (decodeURI(this.$route.fullPath) === path) {
+          // 重复点击相同的按钮，不会push，直接刷新页面
+          this.$router.go(0);
+        } else {
+          this.$router.push(path);
+        }
       }
     }
   };

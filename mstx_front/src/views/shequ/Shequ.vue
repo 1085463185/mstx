@@ -17,11 +17,11 @@
 	export default {
 	  name: 'shequ',
 	  components: {
-	    dht:() => import("@/components/shequ/dht.vue"),
+		dht:() => import("@/components/shequ/dht.vue"),
 	    myheader:() => import("@/components/myheader.vue"),
-	   lbt:()=>import ("@/components/shequ/lbt.vue"),
-	   topic:()=>import("@/components/shequ/topic.vue"),
-	   comment:()=>import ("@/components/shequ/comment.vue")
+	   	lbt:()=>import ("@/components/shequ/lbt.vue"),
+	  	topic:()=>import("@/components/shequ/topic.vue"),
+	   	comment:()=>import ("@/components/shequ/comment.vue")
 	  }
 	}
 </script>

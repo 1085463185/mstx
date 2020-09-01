@@ -57,7 +57,7 @@
 		float: left;
 	}
 
-	/ .perent {
+	 .perent {
 		display: none;
 		width: 100%;
 		height: 100%;

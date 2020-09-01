@@ -95,7 +95,6 @@
 				console.log(res.data)
 				this.foodArr=res.data.food
 				
-				
 			})
 			
 		}
