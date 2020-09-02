@@ -25,10 +25,12 @@ export default {
   data() {
     return {
       keyword: "",
-      status:"1",
+      status:1,
       activeIndex: "1",
       activeIndex2: "1",
-      caipuList: []
+      caipuList: [],
+      shicaiList:[],
+      list:[]
     };
   },
   watch:{
@@ -53,26 +55,10 @@ export default {
     handleSelect(key, keyPath) {
       console.log(typeof key)
       this.status=key;
-      // if(key==2){
-      //     this.$http
-      //     .get("http://192.168.6.36:8000/showmenuByname", {
-      //       params: {
-      //         keyword: this.keyword
-      //       }
-      //     })
-      //     .then(res => {
-      //       // 传递参数
-      //       this.caipuList = res.data;
-
-      //       Bus.$emit("getMenuList", this.caipuList);
-      //     });
-      // }
+      this.search()
     },
-    search() {
-      
-      if (this.keyword) {
-        Bus.$emit("getMenuname", this.keyword);
-        this.$http
+    showmenu(){
+         this.$http
           .get("http://192.168.6.36:8000/showmenuByname", {
             params: {
               keyword: this.keyword
@@ -81,9 +67,42 @@ export default {
           .then(res => {
             // 传递参数
             this.caipuList = res.data;
-
-            Bus.$emit("getMenuList", this.caipuList);
           });
+    },
+    showfood(){
+         this.$http
+          .get("http://192.168.6.36:8000/showfoodByname", {
+            params: {
+              foodname:this.keyword
+            }
+          })
+          .then(res => {
+            // 传递参数
+            this.shicaiList = res.data;
+            // console.log("====")
+            // console.log(this.caipuList )
+          });
+    },
+    search() {
+
+      if (this.keyword) {
+        Bus.$emit("getMenuname", this.keyword);
+        if(this.status=="1"){
+          this.showmenu();
+          this.showfood();
+          this.list=this.caipuList.concat(this.shicaiList)
+            Bus.$emit("getMenuList", this.list);
+        }else if(this.status=="2"){
+           this.showmenu();
+           Bus.$emit("getMenuList", this.caipuList);
+           Bus.$emit("getstatus",this.status)
+          
+        }else if(this.status=="3"){
+           this.showfood();
+           Bus.$emit("getMenuList",this.shicaiList);
+           Bus.$emit("getstatus",this.status)
+        }
+        // console.log(this.showfood(),this.showmenu())
       } else return;
     }
   }

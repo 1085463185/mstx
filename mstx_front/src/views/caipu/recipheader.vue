@@ -112,6 +112,7 @@ export default {
   background-color: transparent;
   font-size: 20px;
   cursor: pointer;
+  width: 100px;
 }
 
 .ssbtn {

@@ -18,7 +18,8 @@ export default {
   data: function() {
     return {
       meunList: [],
-      keyword: ""
+      keyword: "",
+      status:""
     };
   },
   mounted() {
@@ -28,10 +29,21 @@ export default {
     Bus.$on("getMenuList", meunList => {
       this.meunList = meunList;
     });
+     Bus.$on("getstatus", status => {
+       this.status = status
+     });
+   
   },
   methods: {
-    joinBuZou(e) {
-      this.$router.push(`/buzou?id=${e.target.id}`);
+    joinBuZou(e) { 
+         // console.log(status)
+            if(this.status==2){
+               this.$router.push(`/buzou?id=${e.target.id}`);
+            }else if(this.status==3){
+               this.$router.push(`shicailist?kind=${e.target.innerHTML}`);
+              // console.log()
+            }       
+
     }
   }
 };
@@ -39,6 +51,7 @@ export default {
 
 <style scoped>
 .jieguo {
+  margin-top:30px;
   width: 65%;
   float: left;
 }
@@ -63,6 +76,12 @@ export default {
   border-bottom: 2px solid pink;
 }
 .menuBox span {
+ 
   font-size: 20px;
+}
+.textdes span:hover{
+  cursor: pointer;
+  color: red;
+  text-decoration: underline;
 }
 </style>

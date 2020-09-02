@@ -3,11 +3,7 @@
 		<span>流行与排行</span>
 		<div>
 			<pop></pop>
-			<pop></pop>
-			<pop></pop>
-			<pop></pop>
-			<pop></pop>
-			<pop></pop>
+		
 		</div>
 	</div>
 </template>
