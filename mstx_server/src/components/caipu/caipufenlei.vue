@@ -1,66 +1,71 @@
 <template>
 	<div class="box">
 		<toTop></toTop>
-		<table v-for="(item,i) in foodArr" class="td" :key="item.id">
-			<div class="left">{{item.class}}</div>
-			<div class="right">
-				<td v-for="part in item.has.split(',')" :key="part">{{part}}</td>
+		<table v-for="item in cookbookArr" class="td" :key="item.id">
+			<div class="left">{{item.className}}</div>
+			<div @click="gotomenuPage" class="right">
+				<td  v-for="part in item.has.split(',')" :key="part">{{part}}</td>
 			</div>
 		</table>
-		<btinform></btinform>
+
 	</div>
 </template>
-
+<!-- {{item.has.split(",")[index]}} -->
 <script>
-	import btinform from "../Bt_information/Bt_inform.vue"
+
 	import toTop from "../toTop/toTop.vue"
 	export default{
 		data:function(){
 			return {
-				foodArr:''
+            cookbookArr:'',
+            kindArr:[]
 		}
 	},
 	components:{
 		toTop,
-		btinform
+
 	},
 	mounted(){
-		this.getAllFoods()
+		this.getAllCookbook()
 	},
 	methods:{
-		getAllFoods(){
-		this.$http.get("/showAllfood",{
+      gotomenuPage(e){
+         
+         this.$router.push(`/recip/caipufenleiList?kind=${e.target.innerHTML}`)
+       
+      },
+       
+		getAllCookbook(){
+      
+		this.$http.get("http://192.168.6.36:8000/showAllcookbook",{
 			
+		}).then((res)=>{
+         this.cookbookArr = res.data
+         console.log(res.data)
 		})
-		.then((res)=>{
-			console.log(res.data)
-			this.foodArr = res.data
-			console.log(typeof res.data[0].has)
-			console.log(res.data[0].has.split(","))
-		})
-		.catch(e=>console.log(e))
 		}
-	}
-	
-	}
+   }
+      }
 </script>
 
 <style scoped>
 	table{
-		width: 1200px;
+		width: 1000px;
 		height: auto;
 		border: 1px solid #EAEAEA;
 		display: flex;
 		margin-bottom: 20px;
 	}
 	.box{
+      width: 1000px;
+
 		display: flex;
 		flex-wrap: wrap;
-		margin-left:100px;
+      margin: 0 auto;
 	}
 	td{
 		box-sizing: border-box;
-		width: 160px;
+		width: 159px;
 		height: 120px;
 		border: 1px solid #EAEAEA;
 		text-align: center;
@@ -79,7 +84,6 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		font-size:24px ;
 	}
 	.right{
 		display: flex;

@@ -32,7 +32,7 @@
 		color: #f50;
 	}
 	.box{
-		width: 990px;
+		width: 1000px;
 	}
 	a{
 		text-decoration: none;
@@ -42,11 +42,16 @@
 		color: #ff6767;
 	}
 	.bt_information{
+	
+		margin-top: 100px;
 		width: 100%;
 		height: 80px;
 		border-top: 1px solid #EAEAEA;
 		padding-top: 12px;
 		display: flex;
 		justify-content: center;
+		position: absolute;
+
+	
 	}
 </style>
