@@ -18,6 +18,16 @@ class BuZouController extends Controller {
     const { ctx } = this;
   	ctx.body=await this.ctx.service.buzou.getFood(ctx.request.body);
   }
+  // 添加发布菜品图片
+  async uploadFile() {
+  	let newUrl = await this.ctx.service.buzou.uploadGoods();
+  	this.ctx.response.body = newUrl; 
+  }
+  // 添加发布菜品
+  async addCaiPu() {
+    const { ctx } = this;
+  	ctx.body=await this.ctx.service.buzou.addCaiPu(ctx.request.body);
+  }
 }
 
 module.exports = BuZouController;

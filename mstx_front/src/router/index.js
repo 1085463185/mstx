@@ -5,7 +5,7 @@ Vue.use(VueRouter)
 
 // 陈坤路由
 // import Home from '../views/Home.vue'
-import login from "../components/login/login.vue"
+import login from  "../components/login/login.vue"
 import userlogin from "../components/login/userlogin.vue"
 import zhuce from "../components/login/userzhuce.vue"
 import buzou from "../components/buzouye/buzou.vue"
@@ -14,36 +14,62 @@ import recip from "@/views/caipu/recip.vue"
 import search from "@/views/sousuo/search.vue"
 // 引入菜谱内部的子组件
 import caipufenlei from "@/components/caipu/caipufenlei.vue"
-import caipufenleiList from "@/components/caipu/caipufenleiList.vue"
 import caipulist from "@/components/caipu/caipulist.vue"
 import caipuhome from "@/components/caipu/caipuhome.vue"
 import caidan from "@/components/caipu/caidan.vue"
-
-
+import food from "../views/shicai/food.vue"
 
 // 食材
 import foodsort from "../views/shicai/foodSort.vue"
 import shicailist from "@/components/shicai/shicailist.vue"
 
-
-
-
-const routes = [
+  const routes = [
+    // 主页
   {
     path: '/',
     name: 'Home',
     component: Home
   },
+  //关于我们
   {
     path: '/about',
     name: 'About',
     component: () => import("@/views/about/About.vue"),
+    children: [{
+      path: "content1",
+      name: "content1",
+      component: () => import("@/components/about/Content1.vue")
+    },
+    {
+      path: "content2",
+      name: "content2",
+      component: () => import("@/components/about/Content2.vue")
+    },{
+      path: "content3",
+      name: "content3",
+      component: () => import("@/components/about/Content3.vue")
+    },{
+      path: "content4",
+      name: "content4",
+      component: () => import("@/components/about/Content4.vue")
+    },{
+      path: "content5",
+      name: "content5",
+      component: () => import("@/components/about/Content5.vue")
+    },]
   },
+  // 菜品
   {
-    // 食材分类
+    path: '/Varietyofdishes',
+    name: 'Varietyod',
+    component: () => import("@/views/caipulei/Varietyofdishes.vue"),
+  },
+
+  // 食材分类
+  {
     path: '/food',
     name: 'Food',
-    component: foodsort,
+    component:food
   },
   {
     // 食材清单
@@ -51,30 +77,34 @@ const routes = [
     name: 'shicailist',
     component: shicailist,
   },
-
   // 陈坤路由
+  // 登录
   {
-    path: "/login",
-    name: "self",
-    component: login,
-    redirect: "/login/user",
-    children: [{ path: "user", component: userlogin }, { path: "zhuce", component: zhuce }]
+    path:"/login" ,
+    name:"self",
+    component:login,
+    redirect:"/login/user",
+    children:[{path:"user",component:userlogin},{path:"zhuce",component:zhuce}]
   },
+  // 步骤
   {
     path: '/buzou',
     name: 'buzou',
     component: buzou
   },
   // 邓志涵路由
+  // 社区
   {
     path: '/community',
     component: () => import("@/views/shequ/Shequ")
   },
   // 程粤路由
+  // 菜谱
   {
     path: "/recip", component: recip,
+    // redirect: "/recip/caipulist",
     children: [
-
+    
       {
         path: "caipufenlei",
         component: caipufenlei,
@@ -86,7 +116,7 @@ const routes = [
       {
         path: "caipuhome",
         component: caipuhome,
-        children: [
+        children:[
           {
             path: "caipulist",
             component: caipulist,
@@ -96,15 +126,26 @@ const routes = [
       {
         path: "caidan",
         component: caidan,
+
       },
+    
     ],
+
   },
+  // 搜索
   {
     path: '/search',
-    component: search
+    component:search
   },
-
   // {
+  //   path: '/recip',
+  //   name: 'Recip',
+  //   component: () => import("@/views/caipu/recip.vue")
+  // },{
+  //   path: '/food',
+  //   name: 'Food',
+  //   component: () => import("@/views/food.vue")
+  // },{
   //   path: '/community',
   //   name: 'Community',
   //   component: () => import("@/views/shequ/community.vue")
@@ -115,12 +156,12 @@ const routes = [
   // }
 ]
 
-
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes
 })
+
 // 路由守卫，不要删啊！
 router.beforeEach((to, from, next) => {
   if (to.path == "/recip") {

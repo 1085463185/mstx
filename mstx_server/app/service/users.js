@@ -7,11 +7,11 @@ class User extends Service {
         return "登录--";
     }
     async caidanhome() {
-        let data = await this.app.mysql.query(`select name, src, description from menu`);
+        let data = await this.app.mysql.query(`select * from menu`);
         return data;
     }
     async foodshome() {
-        let data = await this.app.mysql.query(`select name, src, kind from food`);
+        let data = await this.app.mysql.query(`select * from food`);
         return data;
     }
 }

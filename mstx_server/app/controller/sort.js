@@ -16,6 +16,21 @@ class SortController extends Controller {
   		let menuList = await this.ctx.service.sort.getAllMenu();
    		this.ctx.response.body = menuList;
   }
+  // 搜索查询
+  async showmenuByname() {
+  		const { ctx } = this;
+  		 	ctx.body=await this.ctx.service.sort.showmenuByname(ctx.request.query);
+  }
+  // 食材查询菜品
+  async showmenuByfood() {
+  		const { ctx } = this;
+  		 	ctx.body=await this.ctx.service.sort.showmenuByfood(ctx.request.query);
+  }
+  // 食材查询食材
+  async showfoodByname() {
+  		const { ctx } = this;
+  		 ctx.body=await this.ctx.service.sort.showfoodByname(ctx.request.query);
+  }
   
 }
 

@@ -1,6 +1,6 @@
 <template>
 	<div class="routelogin">
-		<myheader></myheader>
+		<!-- <myheader></myheader> -->
 		<div class="login">
 			
 			<el-button-group @click.native="changePage">

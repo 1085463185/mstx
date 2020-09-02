@@ -38,7 +38,7 @@
 				  // 数据库查询并验证传入参数为 pwd tel
 				  // 跳转路由到首页
 				  if(this.$route.query.id==1){
-					  this.$http.post("/login",{
+					  this.$http.post("http://192.168.6.36:8000/login",{
 					  					  params:{
 					  						  pwd:this.pwd,
 					  						  tel:this.tel
@@ -47,6 +47,8 @@
 					  					  console.log(res.data)
 					  					  if(res.data.status==0){
 					  						  this.$router.push("/")
+											  sessionStorage.setItem('tel','this.tel');
+											  
 					  						  alert(res.data.msg)
 					  					  }else if(res.data.status==1){
 					  						  this.uerr=res.data.msg
@@ -57,7 +59,7 @@
 				  }else if(this.$route.query.id==2){
 					  console.log(1)
 					 
-					  this.$http.post("/maglogin",{
+					  this.$http.post("http://192.168.6.36:8000/maglogin",{
 					  					  params:{
 					  						  pwd:this.pwd,
 					  						  tel:this.tel

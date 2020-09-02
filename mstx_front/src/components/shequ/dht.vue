@@ -12,12 +12,14 @@
           <div class="logo">
             <img src="@/assets/mylogo.png" class="blogo">
             <div>我所有的朋友都是吃货</div>
-			
           </div>
-		  <button type="button" class="t1" >社区</button>
+		      <button type="button" class="t1" >社区</button>
 		
           <div class="headerbtn">
-            <button type="button" class="listbtn-shequ">社区广场</button>
+            <button type="button" class="listbtn">社区广场
+              <i></i>
+              <b></b>
+            </button>
             <button type="button" class="listbtn">话题</button>
             <button type="button" class="listbtn">日志</button>
             <button type="button" class="listbtn">活动</button>
@@ -27,8 +29,6 @@
             <button type="button" class="ssbtn">搜索</button>
           </div>
         </div>
-		
-		
       </div>
     </div>
   
@@ -75,14 +75,6 @@ export default {
 };
 </script>
 <style scoped="scoped">
-	.t1{
-		background-color: pink;
-		height: 58px;
-		width: 74px;
-		font-size: 30px;
-		 font-family: "微软雅黑";
-		
-	}
 .header1 {
   position: relative;
   display: flex;
@@ -101,14 +93,57 @@ export default {
   justify-content: space-between;
   width: 990px;
 }
-
-.headerbtn {
-  margin-left: 200px;
-  display: flex;
-  justify-content: space-between;
-  width: 300px;
+.t1{
+  background-color: rgb(255, 103, 103);
+  height: 30px;
+  width: 60px;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 7px;
 }
-
+.headerbtn {
+  position: relative;
+  margin-left: 200px;
+  margin-top: -7px;
+  display: flex;
+  justify-content: left;
+  width: 350px;
+}
+.headerbtn button i {
+  position: absolute;
+  bottom: 0;
+  left: 11%;
+  display: block;
+  overflow: hidden;
+  margin-left: -9px;
+  width: 0px;
+  height: 0px;
+  border: 9px dashed transparent;
+  border-bottom: 9px solid rgb(255, 103, 103);
+}
+.headerbtn button b {
+  position: absolute;
+  bottom: -1.3px;
+  left: 11%;
+  z-index: 2;
+  display: block;
+  overflow: hidden;
+  margin-left: -9px;
+  width: 0px;
+  height: 0px;
+  border: 9px dashed transparent;
+  border-bottom: 9px solid #fff;
+}
+.listbtn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  width: 80px;
+  height: 60px;
+}
 .myheader button:first-child{
   color: red;
 }
@@ -118,23 +153,8 @@ export default {
   height: 20px;
 }
 
-.listbtn {
-  border: none;
-  outline: none;
-  background-color: transparent;
-  font-size: 20px;
-  cursor: pointer;
-  width: 78px;
-  height: 12px;
-}
-.listbtn-shequ{
-	border: none;
-	outline: none;
-	background-color: transparent;
-	font-size: 20px;
-	cursor: pointer;
-	width: 100px;
-	height: 12px;
+.listbtn:hover{
+  color: tomato;
 }
 
 .ssbtn {
@@ -163,10 +183,6 @@ export default {
   box-sizing: border-box;
   font-size: 12px;
   text-align: center;
-}
-
-.listbtn:hover{
-  color: tomato;
 }
 
 .logo {

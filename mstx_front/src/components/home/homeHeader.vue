@@ -1,14 +1,14 @@
 <template>
   <div class="box1">
+   
     <div class="header1">
       <a href="http://localhost:8080/#/">
         <!-- <img src="../../../public/img/1.png" alt /> -->
       </a>
-
       <div @click="goPage">
         <div class="myheader">
           <div class="logo">
-            <img src="@/assets/mylogo.png" class="blogo" />
+            <img src="@/assets/mylogo.png" class="blogo">
             <div>我所有的朋友都是吃货</div>
           </div>
           <div class="headerbtn">
@@ -18,22 +18,17 @@
             <button type="button" class="listbtn">社区</button>
           </div>
           <div class="search">
-            <input v-model="keyword" type="text" placeholder="请输入要搜索内容" />
-            <button  type="button" class="ssbtn">搜索</button>
+            <input type="text" placeholder="请输入要搜索内容">
+            <button type="button" class="ssbtn">搜索</button>
           </div>
         </div>
       </div>
     </div>
+    
   </div>
 </template>
 <script>
 export default {
-  data: function() {
-    return {
-      keyword: "",
-      caipuList: []
-    };
-  },
   methods: {
     goPage(e) {
       var path;
@@ -42,7 +37,7 @@ export default {
           path = "/";
           break;
         case "食谱":
-          path = "/recip/caipuhome/caipulist?kind=热菜";
+          path = "/recip";
           break;
         case "食材":
           path = "/food";
@@ -51,7 +46,7 @@ export default {
           path = "/community";
           break;
         case "搜索":
-          path = `/search?kwd=${this.keyword}`;
+          path = "/search";
           break;
         // 点击到空白处不触发
         default:
@@ -63,7 +58,8 @@ export default {
       } else {
         this.$router.push(path);
       }
-    }
+    },
+
   }
 };
 </script>
@@ -74,14 +70,14 @@ export default {
   align-items: center;
   width: 990px;
   height: auto;
-  margin: 20px auto;
+  margin:20px auto; 
   margin-top: 60px;
   /* background-color: aquamarine; */
 }
-.header1 img {
+.header1 img{
   margin-right: 100px;
 }
-.myheader {
+.myheader{
   display: flex;
   justify-content: space-between;
   width: 990px;
@@ -94,10 +90,10 @@ export default {
   width: 300px;
 }
 
-.myheader button:first-child {
+.myheader button:first-child{
   color: red;
 }
-.search {
+.search{
   margin-top: 10px;
   display: flex;
   height: 20px;
@@ -110,6 +106,7 @@ export default {
   font-size: 20px;
   cursor: pointer;
 }
+
 
 .ssbtn {
   border: none;
@@ -127,7 +124,7 @@ export default {
   background-color: tomato;
 }
 
-.search input {
+.search input{
   height: 26px;
   outline: none;
   border: 1px solid black;
@@ -139,7 +136,7 @@ export default {
   text-align: center;
 }
 
-.listbtn:hover {
+.listbtn:hover{
   color: tomato;
 }
 
@@ -157,4 +154,5 @@ export default {
   height: auto;
   margin-bottom: 4px;
 }
+
 </style>

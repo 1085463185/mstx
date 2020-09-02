@@ -51,30 +51,31 @@
 		methods:{
 			zhuCe(){
 			
-				this.$http.post("/zhuce",{
+				this.$http.post("http://192.168.6.36:8000/zhuce",{
 					name:this.name,
 					tel:this.tel,
 					pwd:this.input1
 				}).then((res)=>{
-					console.log(1)
+					alert(res.data.msg)
 					console.log(res.data)
+					this.$router.push("/login/user?id=1&name=用户名")
 				}).catch((err)=>{
-					console.log(1)
+					alert("用户名不存在")
 				})
 			},
 			telIput(){
 				console.log(1)
 				let regx=/^1[3-9]\d{9}$/
 				if(regx.test(this.tel)){
-					this.telh=`<p style="color:red;margin: 0;">输入正确</p>`
+					this.telh=`<p style="color:green;margin: 0;">输入正确</p>`
 				}else{
 					this.telh=`<p style="color:red;margin: 0;">输入格式错误请重新输入</p>`
 				}
 			},
 			pwdIput(){
-				let regx=/^(?=.*\d+)(?=.*[A-z]+)(?=.*[_])(?=.*\W+).{6,16}$/g
+				let regx=/^(?=.*\d+)(?=.*[A-z]+)(?=.*[_])(?=.*\W+).{6,16}$/
 				if(regx.test(this.input1)){
-					this.pwdh=`<p style="color:red;margin: 0;">输入正确</p>`
+					this.pwdh=`<p style="color:green;margin: 0;">输入正确</p>`
 				}else{
 					this.pwdh=`<p style="color:red;margin: 0;">密码输入格式错误请重新输入</p>`
 				}

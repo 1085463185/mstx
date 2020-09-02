@@ -52,7 +52,7 @@ class UserService extends Service {
    async zhuCe(user) {
 	   console.log(user)
 	   
-  var result=await this.app.mysql.query(`insert into user1(usename,pwd,name)values(${user.tel},${user.pwd},"${user.name}")`);
+  var result=await this.app.mysql.query(`insert into user1(usename,pwd,name)values(${user.tel},"${user.pwd}","${user.name}")`);
     
 		return{
 			 status:0,

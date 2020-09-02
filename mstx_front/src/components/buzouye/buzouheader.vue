@@ -46,7 +46,7 @@
 	          path = "/recip";
 	          break;
 	        case "菜单":
-	          path = "/food";
+	          path = "/recip/caidan";
 	          break;
 	        case "排行":
 	          path = "/community";

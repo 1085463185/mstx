@@ -72,15 +72,16 @@
 				console.log(cid)
 			})
 			// 插叙菜谱步鄹
-			this.$http.post("/buzou",{
-				cid:7
+			this.$http.post("http://192.168.6.36:8000/buzou",{
+				cid:this.$route.query.id
 			}).then((res)=>{
-				// console.log(res.data)
+				console.log("------------")
+				console.log(res.data)
 				this.buzouArr=res.data
 			})
 			// 查询需要展示的菜谱图片和描述
-			this.$http.post("/show",{
-				cid:7
+			this.$http.post("http://192.168.6.36:8000/show",{
+				cid:this.$route.query.id
 			}).then((res)=>{
 				// console.log(res.data)
 				this.cainame=res.data[0].name
@@ -89,10 +90,11 @@
 				this.kind = res.data[0].kind
 			}),
 			// 通过中间表查询食材和用量
-			this.$http.post("/zhongjian",{
-				cid:7
+			this.$http.post("http://192.168.6.36:8000/zhongjian",{
+				cid:this.$route.query.id
 			}).then((res)=>{
-				console.log(res.data)
+				// console.log(res.data)
+				
 				this.foodArr=res.data.food
 				
 			})

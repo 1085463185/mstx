@@ -7,7 +7,6 @@
                 <a>联系我们</a> ·
                 <a>加入我们</a> ·
                 <a>服务声明</a> ·
-                <a>友情链接</a> ·
                 <a>网站地图</a>
             </div>
         </div>
@@ -36,22 +35,19 @@
                 var path="";
                 switch(e.target.innerHTML.trim()) {
                     case "关于我们":
-                        path="/about";
+                        path = "/about/content1?id=0";
                         break;
                     case "联系我们":
-                        path="";
+                        path = "/about/content2?id=1";
                         break;
                     case "加入我们":
-                        path="";
+                        path = "/about/content3?id=2";
                         break;
                     case "服务声明":
-                        path="";
-                        break;
-                    case "友情链接":
-                        path="";
+                        path = "/about/content4?id=3";
                         break;
                     case "网站地图":
-                        path="";
+                        path = "/about/content5?id=4";
                         break;
                     default:
                         return;
@@ -60,6 +56,7 @@
                     // 重复点击相同的按钮，不会push，直接刷新页面
                     this.$router.go(0);
                 } else {
+                    window.scrollTo(0,0);
                     this.$router.push(path);
                 }
             }
@@ -75,6 +72,8 @@
         height: 150px;
         color: #666;
         font-size: 12px;
+        border-top: 1px solid #ccc;
+        padding-top: 20px;
     }
     .about {
         width: 100%;

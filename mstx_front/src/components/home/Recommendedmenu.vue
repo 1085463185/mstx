@@ -73,25 +73,25 @@
                 var path;
                 switch (e.target.innerHTML.trim()) {
                     case "热菜":
-                        path:"";
+                        path = "/Varietyofdishes";
                         break;
                     case "凉菜":
-                        path:"";
+                        path = "/liangcai";
                         break;
                     case "汤羹":
-                        path:"";
+                        path = "/tangao";
                         break;
                     case "主食":
-                        path:"";
+                        path = "/zhushi";
                         break;
                     case "小吃":
-                        path:"";
+                        path = "/xiaochi";
                         break;
                     case "西餐":
-                        path:"";
+                        path = "/xican";
                         break;
                     case "菜谱首页":
-                        path:"";
+                        path = "/recip";
                         break;
                     default:
                         return;
@@ -170,18 +170,19 @@
         width: 230px;
         height: 320px;
         text-align: center;
+        
     }
     
     .caidan_juti>img {
         width: 230px;
         height: 230px;
         margin-bottom: 10px;
-        transition: all 0.8s ease;
+        transition: all 0.5s ease-in-out;
         cursor: pointer;
     }
     .caidan_juti>img:hover {
-        width: 250px;
-        height: 250px;
+        transform: scale(1.1,1.1);
+        
     }
     .caiming {
         font-size: 18px;
