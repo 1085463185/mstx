@@ -19,31 +19,31 @@ export default {
     return {
       meunList: [],
       keyword: "",
-      status:""
+      status: ""
     };
   },
   mounted() {
-    Bus.$on("getMenuname", keyword => {
+      Bus.$on("getMenuname", keyword => {
       this.keyword = keyword;
     });
     Bus.$on("getMenuList", meunList => {
       this.meunList = meunList;
     });
-     Bus.$on("getstatus", status => {
-       this.status = status
-     });
-   
+    Bus.$on("getstatus", status => {
+      this.status = status;
+    });
   },
   methods: {
-    joinBuZou(e) { 
-         // console.log(status)
-            if(this.status==2){
-               this.$router.push(`/buzou?id=${e.target.id}`);
-            }else if(this.status==3){
-               this.$router.push(`shicailist?kind=${e.target.innerHTML}`);
-              // console.log()
-            }       
+    joinBuZou(e) {
+      if (this.status == 1) {
+        this.$router.push(`/buzou?id=${e.target.id}`);
+      } else if (this.status == 2) {
+        this.$router.push(`/buzou?id=${e.target.id}`);
+      } else if (this.status == 3) {
+        // 只有点击食材名字能触发
+        this.$router.push(`shicailist?kind=${e.target.innerHTML}`);
 
+      }
     }
   }
 };
@@ -51,7 +51,7 @@ export default {
 
 <style scoped>
 .jieguo {
-  margin-top:30px;
+  margin-top: 30px;
   width: 65%;
   float: left;
 }
@@ -76,10 +76,9 @@ export default {
   border-bottom: 2px solid pink;
 }
 .menuBox span {
- 
   font-size: 20px;
 }
-.textdes span:hover{
+.textdes span:hover {
   cursor: pointer;
   color: red;
   text-decoration: underline;

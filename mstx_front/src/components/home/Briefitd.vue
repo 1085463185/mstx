@@ -2,26 +2,26 @@
     <div class="briefitd" @mouseenter="showlr" @mouseleave="nonelr">
         <div class="bitext">
             <div class="bitextbox">
-                <div class="bizhuti"></div>
-                <div class="biyonghu"></div>
-                <div class="bineirong"></div>
+                <div class="bizhuti">百种方法打造美味排骨</div>
+                <div class="biyonghu">小美的菜单</div>
+                <div class="bineirong">想必每个吃货都爱吃又香又美味的排骨吧，那么今天小编就给大家带来N种美味又可口的排骨做法～</div>
             </div>
             <div class="bitextbox">
-                <div class="bizhuti"></div>
-                <div class="biyonghu"></div>
-                <div class="bineirong"></div>
+                <div class="bizhuti">胡萝卜这样做，孩子超爱吃</div>
+                <div class="biyonghu">小美的菜单</div>
+                <div class="bineirong">胡萝卜是一种质脆味美、营养丰富的家常蔬菜，被誉为“东方小人参”。具有补中气、健康~</div>
             </div>
             <div class="bitextbox">
-                <div class="bizhuti"></div>
-                <div class="biyonghu"></div>
-                <div class="bineirong"></div>
+                <div class="bizhuti">处暑养生，健脾润燥很重要</div>
+                <div class="biyonghu">小美的菜单</div>
+                <div class="bineirong">处暑是由热转凉的交替时期，从养生的角度来看，处暑节气适宜进食清热安神的食物，多吃滋阴润燥食物</div>
             </div>
         </div>
         <div v-show="bout" class="brfi">
-            <div class="brfilr" @click="huoqunew">
+            <div class="brfilr">
                 <img src="@/assets/home/banner/向左.png">
             </div>
-            <div class="brfilr" @click="huoqunew">
+            <div class="brfilr">
                 <img src="@/assets/home/banner/向右.png">
             </div>
         </div>
@@ -44,9 +44,6 @@
             },
             nonelr() {
                 this.bout = false;
-            },
-            huoqunew() {
-                console.log("ajax请求");
             },
         }
     }
@@ -91,21 +88,22 @@
         justify-content: space-between;
         width: 900px;
         height: 120px;
-        background-color: #ccc;
         margin: 0 auto;
     }
     .bitextbox {
         width: 280px;
         height: 100%;
-        background-color: #000;
     }
     .bizhuti {
+        margin-top: 10px;
         font-size: 20px;
         font-weight: 400;
+        margin-bottom: 10px;
     }
     .biyonghu {
         font-size: 12px;
         color: #ccc;
+        margin-bottom: 10px;
     }
     .bineirong {
         font-size: 12px;

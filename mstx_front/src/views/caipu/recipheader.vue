@@ -65,8 +65,7 @@ export default {
           return;
       }
       if (decodeURI(this.$route.fullPath) === path) {
-        // 重复点击相同的按钮，不会push，直接刷新页面
-        this.$router.go(0);
+        // 重复点击相同的按钮，会push
       } else {
         this.$router.push(path);
       }

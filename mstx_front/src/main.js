@@ -5,6 +5,9 @@ import router from './router'
 import store from './store'
 import axios from 'axios'
 import totop from "@/components/toTop/toTop.vue"
+
+axios.defaults.baseURL="http://192.168.6.36:8000"
+Vue.prototype.$http=axios;
 // 全局组件引入处
 
 
@@ -19,7 +22,7 @@ Vue.component("totop",totop)
 
 
 
-Vue.prototype.$http=axios;
+
 
 Vue.config.productionTip = false;
 

@@ -141,7 +141,7 @@ export default {
 }
 
 .logo {
-  width: 108px;
+  width: 130px;
   height: auto;
   font-size: 9px;
   letter-spacing: 1px;
@@ -149,8 +149,7 @@ export default {
 }
 
 .blogo {
-  margin: 0px;
-  width: 108px;
+  width: 130px;
   height: auto;
   margin-bottom: 4px;
 }

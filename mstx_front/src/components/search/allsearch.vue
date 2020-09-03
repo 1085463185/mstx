@@ -12,7 +12,7 @@ import Bus from "./Bus.js"
 export default {
   data() {
     return {
-      searchArr: ["早餐", "牛肉", "红烧肉", "排骨", "鱼", "汤", "虾"],
+      searchArr: ["南瓜", "牛肉", "红烧肉", "排骨", "鱼", "汤", "虾"],
 	  keyword: "",
 	  caipuList:[]
     };

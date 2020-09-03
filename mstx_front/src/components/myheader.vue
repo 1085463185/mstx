@@ -1,77 +1,115 @@
 <template>
   <div id="myheader" @click="goPage" v-cloak>
     <div class="myheader">
-      <div class="myheaderLeft" >
+      <div class="myheaderLeft">
         <div :class="{img:true, imgbgc:ok}" @mouseenter="shouye" @mouseleave="shouyel">
-          <img src="@/assets/mylogo-白.png" :class="{mylogo:true, mlogo:ok}">
-          <button type="button" :class="{souye:ok}" >首页</button>
+          <img src="@/assets/mylogo-白.png" :class="{mylogo:true, mlogo:ok}" />
+          <button type="button" :class="{souye:ok}">首页</button>
         </div>
-        
+
         <button type="button">食谱</button>
         <button type="button">食材</button>
         <button type="button">社区</button>
+        <button type="button">话题</button>
         <button type="button">搜索</button>
       </div>
+      <!-- <p v-text="yonghu"></p> -->
       <div class="myheaderRight">
-        <button type="button">注册</button>|
-        <button type="button">登陆</button>
+        <!-- <div v-for="item in yonghu" :key="item.id" >
+          <button type="button">{{item.name}}</button>|
+          <button type="button">登陆</button>
+        </div>-->
+        <button class="denglu" type="button" v-html="this.yonghu.name1">{{yonghu.name1}}</button>
+        <button type="button">{{yonghu.name2}}</button>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-  export default {
-    data: function() {
-      return {
-        ok: false,
-      }
+export default {
+  data() {
+    return {
+      yonghu: {
+        name1: "登陆",
+        name2: "注册"
+      },
+      ok: false
+    };
+  },
+
+  mounted() {
+    let myname = sessionStorage.getItem("name");
+    if (myname) {
+      this.yonghu.name1 = `欢迎<span style='color:red;font-size:20px;margin-left:5px'>${myname}</span>`;
+      this.yonghu.name2 = "个人中心";
+    } else {
+      (this.yonghu.name1 = "登陆"), (this.yonghu.name2 = "注册");
+    }
+    if (this.yonghu.name1 != "登陆") {
+      let denglu = document.querySelector(".denglu");
+      denglu.onmouseover = function() {
+        denglu.innerHTML = "切换登陆";
+      };
+      denglu.onmouseout = function() {
+        denglu.innerHTML = `欢迎<span style='color:red;font-size:20px;margin-left:5px'>${myname}</span>`;
+      };
+    }
+  },
+
+  methods: {
+    shouye() {
+      this.ok = true;
     },
-    methods: {
-      shouye() {
-        this.ok = true;
-      },
-      shouyel() {
-        this.ok = false;
-      },
-      goPage(e) {
-        var path;
-        switch (e.target.innerHTML.trim()) {
-          case "首页":
-            path = "/";
-            break;
-          case "食谱":
-            path = "/recip/caipuhome/caipulist?kind=热菜";
-            break;
-          case "食材":
-            path = "/food";
-            break;
-          case "社区":
-            path = "/community";
-            break;
-          case "搜索":
-            path = "/search?kwd=";
-            break;
-          case "注册":
-            path = "/sign";
-            break;
-          case "登陆":
-            path = "/login";
-            break;
-          // 点击到空白处不触发
-          default:
-            return;
-        }
-        if (decodeURI(this.$route.fullPath) === path) {
-          // 重复点击相同的按钮，不会push，直接刷新页面
-          this.$router.go(0);
-        } else {
-          
-          this.$router.push(path);
-        }
+    shouyel() {
+      this.ok = false;
+    },
+    goPage(e) {
+      var path;
+      switch (e.target.innerHTML.trim()) {
+        case "首页":
+          path = "/";
+          break;
+        case "食谱":
+          path = "/recip/caipuhome/caipulist?kind=热菜";
+          break;
+        case "食材":
+          path = "/food";
+          break;
+        case "社区":
+          path = "/community";
+          break;
+        case "搜索":
+          path = "/search?kwd=";
+          break;
+        case "注册":
+          path = "/sign";
+          break;
+        case "登陆":
+          path = "/login";
+          break;
+        case "个人中心":
+          path = "/gerenzx";
+          break;
+        case "切换登陆":
+          path = "/login";
+          break;
+        case "话题":
+          path = "/huati";
+          break;
+        // 点击到空白处不触发
+        default:
+          return;
+      }
+      if (decodeURI(this.$route.fullPath) === path) {
+        // 重复点击相同的按钮，不会push，直接刷新页面
+        // this.$router.go(0);
+      } else {
+        this.$router.push(path);
       }
     }
-  };
+  }
+};
 </script>
 <style >
 * {
@@ -119,7 +157,7 @@
   line-height: 40px;
   opacity: 0.5;
 }
-.mlogo{
+.mlogo {
   opacity: 1;
 }
 .img {
@@ -141,7 +179,10 @@
   justify-content: space-between;
 }
 .myheaderRight {
+  display: flex;
   margin-right: 20px;
 }
-
+.myheaderRight button {
+  width: 100px;
+}
 </style>

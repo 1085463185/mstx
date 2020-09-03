@@ -15,7 +15,7 @@
 	 
     </div>
 	<!-- 引入底部关于 -->
-	 <btinform></btinform>
+	 <btinform class="bottom"></btinform>
 	</div>
 
 </template>
@@ -50,6 +50,10 @@ export default {
 </script>
 
 <style scoped>
+ .bottom{
+      position: relative;
+      bottom: 0;
+    }
 table {
  	 margin: 0 auto;
   width: 1000px;

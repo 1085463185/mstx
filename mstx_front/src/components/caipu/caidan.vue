@@ -6,6 +6,9 @@
       </div>
       <p class="tuijianP">{{item.name}}</p>
     </div>
+    <div>
+      <el-pagination @click.native="getpagenum" background layout="prev, pager, next" :total="100"></el-pagination>
+    </div>
   </div>
 </template>
 
@@ -13,18 +16,34 @@
 export default {
   data: function() {
     return {
-      caidanList: []
+      caidanList: [],
+      pagenum: ""
     };
   },
   mounted() {
-    this.$http.get("http://192.168.6.36:8000/showAllMenu", {}).then(res => {
-      this.caidanList = res.data;
-    });
+    this.getmenu(1);
   },
-  methods:{
-      joinBuZou(e){
-            this.$router.push(`/buzou?id=${e.target.id}`)
-      }
+  methods: {
+    getpagenum(e) {
+      console.log(e.target.innerHTML);
+      this.getmenu(e.target.innerHTML);
+    },
+    getmenu(pagenum) {
+
+      this.$http
+        .get("http://192.168.6.36:8000/showAllMenu", {
+          params: {
+            pagenum: pagenum
+          }
+        })
+        .then(res => {
+          // console.log(res.data);
+          this.caidanList = res.data;
+        });
+    },
+    joinBuZou(e) {
+      this.$router.push(`/buzou?id=${e.target.id}`);
+    }
   }
 };
 </script>
@@ -62,4 +81,8 @@ export default {
 p {
   margin-top: 10px;
 }
+/* .el-pagination{
+  font-size: 20px;
+  margin: 0 auto;
+} */
 </style>

@@ -1,22 +1,21 @@
 <template>
   <div class="box1">
-   
-       <div class="header1">
-         <a href="http://localhost:8080/#/">
-           <!-- <img src="../../../public/img/1.png" alt /> -->
-         </a>
-      
+    <div class="header1">
+      <a href="http://localhost:8080/#/">
+        <!-- <img src="../../../public/img/1.png" alt /> -->
+      </a>
 
       <div @click="goPage">
         <div class="myheader">
           <div class="logo">
-            <img src="@/assets/mylogo.png" class="blogo">
+            <img src="@/assets/mylogo.png" class="blogo" />
             <div>我所有的朋友都是吃货</div>
           </div>
-		      <button type="button" class="t1" >社区</button>
-		
+          <button type="button" class="t1">社区</button>
+
           <div class="headerbtn">
-            <button type="button" class="listbtn">社区广场
+            <button type="button" class="listbtn">
+              社区广场
               <i></i>
               <b></b>
             </button>
@@ -25,22 +24,17 @@
             <button type="button" class="listbtn">活动</button>
           </div>
           <div class="search">
-            <input type="text" placeholder="请输入要搜索内容">
+            <input type="text" placeholder="请输入要搜索内容" />
             <button type="button" class="ssbtn">搜索</button>
           </div>
         </div>
       </div>
     </div>
-  
-    
   </div>
 </template>
 <script>
-	
-	
 export default {
-	
-  methods: {      
+  methods: {
     goPage(e) {
       var path;
       switch (e.target.innerHTML.trim()) {
@@ -57,7 +51,10 @@ export default {
           path = "/community";
           break;
         case "搜索":
-          path = "/search";
+          path = "/search?kwd=";
+          break;
+        case "话题":
+          path = "/huati";
           break;
         // 点击到空白处不触发
         default:
@@ -69,8 +66,7 @@ export default {
       } else {
         this.$router.push(path);
       }
-    },
-
+    }
   }
 };
 </script>
@@ -81,19 +77,19 @@ export default {
   align-items: center;
   width: 990px;
   height: auto;
-  margin:20px auto; 
+  margin: 20px auto;
   margin-top: 60px;
   /* background-color: aquamarine; */
 }
-.header1 img{
+.header1 img {
   margin-right: 100px;
 }
-.myheader{
+.myheader {
   display: flex;
   justify-content: space-between;
   width: 990px;
 }
-.t1{
+.t1 {
   background-color: rgb(255, 103, 103);
   height: 30px;
   width: 60px;
@@ -144,16 +140,16 @@ export default {
   width: 80px;
   height: 60px;
 }
-.myheader button:first-child{
+.myheader button:first-child {
   color: red;
 }
-.search{
+.search {
   margin-top: 10px;
   display: flex;
   height: 20px;
 }
 
-.listbtn:hover{
+.listbtn:hover {
   color: tomato;
 }
 
@@ -173,7 +169,7 @@ export default {
   background-color: tomato;
 }
 
-.search input{
+.search input {
   height: 26px;
   outline: none;
   border: 1px solid black;
@@ -199,5 +195,4 @@ export default {
   height: auto;
   margin-bottom: 4px;
 }
-
 </style>

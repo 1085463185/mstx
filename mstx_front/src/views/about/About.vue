@@ -1,7 +1,10 @@
 <template>
     <div class="box">
         <banner></banner>
-        <content></content>
+        <div class="aboutzhuti">
+            <router-view></router-view>
+            <copyright></copyright>
+        </div>
     </div>
 </template>
 
@@ -14,7 +17,7 @@
         },
         components: {
             banner: () => import("@/components/about/Banner.vue"),
-            content: () => import("@/components/about/Content.vue"),
+            copyright: () => import("@/components/about/Copyright.vue")
         },
         methods: {
 
@@ -26,7 +29,13 @@
     .box {
         position: relative;
         width: 100%;
-        height: 800px;
+        height: auto;
         margin: 0 autos;
+    }
+    .aboutzhuti {
+        position: relative;
+        width: 990px;
+        height: auto;
+        margin: 0 auto;
     }
 </style>

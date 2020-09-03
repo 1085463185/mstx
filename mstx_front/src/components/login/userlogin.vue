@@ -1,113 +1,124 @@
 <template>
 	<div class="user">
-		<div class="iwidth">
-			<span>{{name}}:</span>
-			<el-input
-			  placeholder="请输入手机号/名称"
-			  v-model="tel"
-			  clearable>
-			</el-input>
-			<p style="color: red;">{{uerr}}</p>
-		</div>
-		<div class="pwidth">
-			<span>密码:</span>
-			<el-input placeholder="请输入密码" v-model="pwd" show-password ></el-input>
-			<p style="color: red;">{{perr}}</p>
-		</div>
-		<el-button type="success" @click.native="userLogin">登录</el-button>
+		<form>
+			<div class="login-field">
+				<input type="text" id="no" autocomplete="off" v-model="tel" placeholder="请输入手机号"/>
+				<p style="color: red;">{{uerr}}</p>
+				<label>用户</label>
+			</div>
+			<div class="login-field">
+				<input type="password" id="pwd" v-model="pwd" placeholder="请输入密码"/>
+				<p style="color: red;">{{perr}}</p>
+				<label>密码</label>
+			</div>
+			<el-button type="success" @click.native="userLogin">登录</el-button>
+		</form>
 	</div>
 </template>
 
 <script>
-	export default {
-	    data() {
-	         return {
-	           pwd: '',
-			   tel:"",
-			   name:"",
-			   uerr:"",
-			   perr:""
-	         }
-	       },
-		   mounted() {
-		   	this.name=this.$route.query.name
-		   },
-		  methods:{
-			  userLogin(){
-				  console.log(1)
-				  // 数据库查询并验证传入参数为 pwd tel
-				  // 跳转路由到首页
-				  if(this.$route.query.id==1){
-					  this.$http.post("http://192.168.6.36:8000/login",{
-					  					  params:{
-					  						  pwd:this.pwd,
-					  						  tel:this.tel
-					  					  }
-					  }).then((res)=>{
-					  					  console.log(res.data)
-					  					  if(res.data.status==0){
-					  						  this.$router.push("/")
-											  sessionStorage.setItem('tel','this.tel');
-											  
-					  						  alert(res.data.msg)
-					  					  }else if(res.data.status==1){
-					  						  this.uerr=res.data.msg
-					  					  }else{
-					  						  this.perr = res.data.msg
-					  					  }
-					  })
-				  }else if(this.$route.query.id==2){
-					  console.log(1)
-					 
-					  this.$http.post("http://192.168.6.36:8000/maglogin",{
-					  					  params:{
-					  						  pwd:this.pwd,
-					  						  tel:this.tel
-					  					  }
-					  }).then((res)=>{
-					  					  console.log(res.data)
-					  					  if(res.data.status==0){
-					  						  this.$router.push("/")//后台管理页面
-					  						  alert(res.data.msg)
-					  					  }else if(res.data.status==1){
-					  						  this.uerr=res.data.msg
-					  					  }else{
-					  						  this.perr = res.data.msg
-					  					  }
-					  })
-				  }
-			  }
-		  } 
-	  }
+export default {
+  data() {
+    return {
+      pwd: "",
+      tel: "",
+      name: "",
+      uerr: "",
+      perr: ""
+    };
+  },
+  mounted() {
+    this.name = this.$route.query.name;
+  },
+  methods: {
+    userLogin() {
+      // 数据库查询并验证传入参数为 pwd tel
+      // 跳转路由到首页
+      
+        this.$http
+          .post("http://192.168.6.36:8000/login", {
+            params: {
+              pwd: this.pwd,
+              tel: this.tel
+            }
+		  })
+		//   15680260863
+		// 123abc_@
+          .then(res => {
+			  console.log(res.data)
+			  let yhid = res.data.result[0].id
+			    sessionStorage.setItem("yhid", yhid);
+			let myname = res.data.result[0].name
+            if (res.data.status == 0) {
+			  this.$router.push(`/`);
+              sessionStorage.setItem("tel", this.tel);
+              sessionStorage.setItem("name", myname);
+             
+              alert(res.data.msg);
+            } else if (res.data.status == 1) {
+              this.uerr = res.data.msg;
+            } else {
+              this.perr = res.data.msg;
+            }
+          });
+       
+      
+    }
+  }
+};
 </script>
 
 <style scoped="scoped">
-	.el-input{
-		margin-bottom: 20px;
-		width: 80%;
-	}
-	
-	.iwidth{
-		width: 80%;
-		margin-top: 20px;
-	}
-	.pwidth{
-		width: 80%;
-		padding-left: 16px;
+/* 	mybutton{
+		outline: none;
+		border: none;
+		background-color: #88d2fb;
+		width: 54%;
+		height: 38px;
+		border-radius: 5px;
+		font-size: 18px;
+		font-weight: 400;
+	} */
+	.user form{
+		text-align: center;
+		padding-top: 24px;
 	}
 	.user{
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		align-items: center;
-	
+		margin-top: 34px;
 	}
-	span{
-		
+	.user .login-field {
+		position: relative;
+	}
+
+	.user .login-field input {
+		width: 84%;
+		padding: 10px 8px;
 		font-size: 16px;
-		
+		color: #fff;
+		margin-bottom: 40px;
+		border-bottom: 1px solid #fff;
+		outline: none;
+		border-radius: 12px;
+		background: transparent;
 	}
-	.el-button{
-		width: 80%;
+
+	.user .login-field label {
+		position: absolute;
+		top: 0;
+		left: 0;
+		letter-spacing: 1px;
+		padding: 10px 0;
+		font-size: 16px;
+		color: #fff;
+		pointer-events: none;
+		transition: .5s;
+	}
+
+	.user .login-field input:focus~label,
+	.user .login-field input:valid~label {
+		top: -42px;
+		left: 22px;
+		color: #16e6fd;
+		font-size: 22px;
 	}
 </style>

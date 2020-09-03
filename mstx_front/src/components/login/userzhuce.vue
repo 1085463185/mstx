@@ -29,7 +29,7 @@
 			<el-input placeholder="请输入密码" v-model="input2" show-password @change.native="surPwd"></el-input>
 			<p v-html="surpwdh"></p>
 		</div>
-		<el-button type="success" @click.native="zhuCe" >注册</el-button>
+		<el-button type="success" @click.native="zhuCe" class="zhuCe">注册</el-button>
 		</div>
 	</div>
 </template>
@@ -93,6 +93,9 @@
 </script>
 
 <style scoped="scoped">
+	.user>div{
+		margin-left: -20px;
+	}
 	.el-input{
 		margin-bottom: 5px;
 		width: 70%;
@@ -104,35 +107,27 @@
 	}
 	.pwidth{
 		width: 100%;
-		
 	}
 	.user{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-	
 	}
 	span{
-		
+		color:#59B5AD;
+		display: inline-block;
+		width: 70px;
 		font-size: 16px;
-		
+		font-weight: 700;
 	}
 	.el-button{
-		width: 80%;
-	}
-	.yizhi{
-		padding-left: 31px;
-	}
-	.left{
-		padding-left: 16px;
-	}
-	.right{
-		padding-left: 16px;
+		width: 56%;
+		margin-top: 10px;
 	}
 	p{
-		color: #006600;
-		font-size: 12px;
-		margin: 0;
+		color: red;
+		font-size: 14px;
+		margin: 5px;
 	}
 </style>

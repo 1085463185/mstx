@@ -2,7 +2,7 @@
 
   <div class="caipu">
     <recipheader></recipheader>
-    <btinform></btinform>
+    <btinform class="bottom"></btinform>
   </div>
 </template>
 <script>
@@ -15,4 +15,10 @@ export default {
   },
 }
 </script>
+<style scoped>
+    .bottom{
+      position: relative;
+      bottom: 0;
+    }
+</style>
 
