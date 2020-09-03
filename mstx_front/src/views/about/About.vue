@@ -14,7 +14,7 @@
         },
         components: {
             banner: () => import("@/components/about/Banner.vue"),
-            content: () => import("@/components/about/Content.vue"),
+            // content: () => import("@/components/about/Content.vue"),
         },
         methods: {
 

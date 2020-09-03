@@ -6,7 +6,7 @@
       <winbotm></winbotm>
     </div>
     <!-- 引入底部关于 -->
-    <btinform></btinform>
+    <btinform class="bottom"></btinform>
   </div>
 </template>
 
@@ -31,5 +31,9 @@ export default {
 .container {
   width: 1000px;
   margin: 50px auto;
+}
+.bottom{
+  position: absolute;
+  bottom: 0;
 }
 </style>

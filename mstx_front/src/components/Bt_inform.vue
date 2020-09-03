@@ -42,7 +42,7 @@
 		color: #ff6767;
 	}
 	.bt_information{
-	
+		background-color: white;
 		margin-top: 100px;
 		width: 100%;
 		height: 80px;

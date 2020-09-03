@@ -57,7 +57,7 @@ export default {
           path = "/community";
           break;
         case "搜索":
-          path = "/search";
+          path = "/search?kwd=";
           break;
         // 点击到空白处不触发
         default:

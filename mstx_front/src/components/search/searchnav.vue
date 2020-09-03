@@ -25,84 +25,97 @@ export default {
   data() {
     return {
       keyword: "",
-      status:1,
+      status: 1,
       activeIndex: "1",
       activeIndex2: "1",
       caipuList: [],
-      shicaiList:[],
-      list:[]
+      shicaiList: [],
+      list: []
     };
   },
-  watch:{
-      "$route.query.kwd": function() {
-       this.getkwd(decodeURI(this.$route.query.kwd));
-     }
+  watch: {
+    "$route.query.kwd": function() {
+      this.getkwd(decodeURI(this.$route.query.kwd));
+    }
   },
   mounted() {
-     this.getkwd(decodeURI(this.$route.query.kwd));
+    this.getkwd(decodeURI(this.$route.query.kwd));
     Bus.$on("getMenuname", keyword => {
       this.keyword = keyword;
     });
   },
   methods: {
-    getkwd(kwd){
-        if(kwd){
-               this.keyword=kwd
-        }else{
-          this.keyword=""
-        }
+    getkwd(kwd) {
+      if (kwd) {
+        this.keyword = kwd;
+      } else {
+        this.keyword = "";
+      }
     },
     handleSelect(key, keyPath) {
-      console.log(typeof key)
-      this.status=key;
-      this.search()
+      // console.log(typeof key);
+      this.status = key;
+      this.search();
     },
-    showmenu(){
-         this.$http
-          .get("http://192.168.6.36:8000/showmenuByname", {
-            params: {
-              keyword: this.keyword
-            }
-          })
-          .then(res => {
-            // 传递参数
-            this.caipuList = res.data;
-          });
+    showmenu() {
+      this.$http
+        .get("http://192.168.6.36:8000/showmenuByname", {
+          params: {
+            keyword: this.keyword
+          }
+        })
+        .then(res => {
+          // 传递参数
+          this.caipuList = res.data;
+          if (this.status == "1") {
+            this.showfood();
+          } else if (this.status == "2") {
+            this.getcaipu();
+          }
+        });
     },
-    showfood(){
-         this.$http
-          .get("http://192.168.6.36:8000/showfoodByname", {
-            params: {
-              foodname:this.keyword
-            }
-          })
-          .then(res => {
-            // 传递参数
-            this.shicaiList = res.data;
-            // console.log("====")
-            // console.log(this.caipuList )
-          });
+    showfood() {
+      this.$http
+        .get("http://192.168.6.36:8000/showfoodByname", {
+          params: {
+            foodname: this.keyword
+          }
+        })
+        .then(res => {
+          // 传递参数
+          this.shicaiList = res.data;
+          if (this.status == "1") {
+            this.getmenu();
+          } else if (this.status == "3") {
+            this.getshicai();
+          }
+        });
+    },
+    getcaipu() {
+      Bus.$emit("getMenuList", this.caipuList);
+    },
+    getshicai() {
+      Bus.$emit("getMenuList", this.shicaiList);
+    },
+    getmenu() {
+      this.list = this.caipuList.concat(this.shicaiList);
+      Bus.$emit("getMenuList", this.list);
     },
     search() {
-
+      
       if (this.keyword) {
         Bus.$emit("getMenuname", this.keyword);
-        if(this.status=="1"){
+        if (this.status == "1") {
           this.showmenu();
           this.showfood();
-          this.list=this.caipuList.concat(this.shicaiList)
-            Bus.$emit("getMenuList", this.list);
-        }else if(this.status=="2"){
-           this.showmenu();
-           Bus.$emit("getMenuList", this.caipuList);
-           Bus.$emit("getstatus",this.status)
-          
-        }else if(this.status=="3"){
-           this.showfood();
-           Bus.$emit("getMenuList",this.shicaiList);
-           Bus.$emit("getstatus",this.status)
+          Bus.$emit("getstatus", this.status);
+        } else if (this.status == "2") {
+          this.showmenu();
+          Bus.$emit("getstatus", this.status);
+        } else if (this.status == "3") {
+          this.showfood();
+          Bus.$emit("getstatus", this.status);
         }
-        // console.log(this.showfood(),this.showmenu())
       } else return;
     }
   }

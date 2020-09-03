@@ -17,7 +17,9 @@ import caipufenlei from "@/components/caipu/caipufenlei.vue"
 import caipulist from "@/components/caipu/caipulist.vue"
 import caipuhome from "@/components/caipu/caipuhome.vue"
 import caidan from "@/components/caipu/caidan.vue"
-import food from "../views/shicai/food.vue"
+import caipufenleiList from "@/components/caipu/caipufenleiList.vue"
+// 多了一句
+// import food from "../views/shicai/food.vue"
 
 // 食材
 import foodsort from "../views/shicai/foodSort.vue"
@@ -59,17 +61,17 @@ import shicailist from "@/components/shicai/shicailist.vue"
     },]
   },
   // 菜品
-  {
-    path: '/Varietyofdishes',
-    name: 'Varietyod',
-    component: () => import("@/views/caipulei/Varietyofdishes.vue"),
-  },
+  // {
+    // path: '/Varietyofdishes',
+    // name: 'Varietyod',
+    // component: () => import("@/views/caipulei/Varietyofdishes.vue"),
+  // },
 
   // 食材分类
   {
     path: '/food',
     name: 'Food',
-    component:food
+    component:foodsort
   },
   {
     // 食材清单
@@ -137,23 +139,6 @@ import shicailist from "@/components/shicai/shicailist.vue"
     path: '/search',
     component:search
   },
-  // {
-  //   path: '/recip',
-  //   name: 'Recip',
-  //   component: () => import("@/views/caipu/recip.vue")
-  // },{
-  //   path: '/food',
-  //   name: 'Food',
-  //   component: () => import("@/views/food.vue")
-  // },{
-  //   path: '/community',
-  //   name: 'Community',
-  //   component: () => import("@/views/shequ/community.vue")
-  // },{
-  //   path: '/search',
-  //   name: 'Search',
-  //   component: () => import("@/views/sousuo/search.vue")
-  // }
 ]
 
 const router = new VueRouter({
