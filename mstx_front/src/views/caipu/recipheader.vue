@@ -11,6 +11,7 @@
             <img src="@/assets/mylogo.png" class="blogo" />
             <div>我所有的朋友都是吃货</div>
           </div>
+          <button type="button" class="t1">食谱</button>
           <div class="headerbtn">
             <button :style="{color:left==1?'red':''}" type="button" class="listbtn">菜谱首页</button>
             <button :style="{color:left==2?'red':''}" type="button" class="listbtn">分类</button>
@@ -35,6 +36,17 @@ export default {
       left: 1,
       keyword:""
     };
+  },
+  created() {
+    let n = decodeURI(window.location.href);
+    let m = n.split("/")[n.split("/").length - 1];
+    if (m.indexOf("caipulist") != -1) {
+      this.left = 1;
+    } else if (m.indexOf("caipufenlei") != -1) {
+      this.left = 2;
+    }else if(m.indexOf("caidan") != -1){
+      this.left = 3;
+    }
   },
   methods: {
     goPage(e) {
@@ -93,11 +105,21 @@ export default {
   justify-content: space-between;
   width: 990px;
 }
+.t1 {
+  background-color: rgb(255, 103, 103);
+  height: 30px;
+  width: 60px;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 7px;
+}
 
 .headerbtn {
   display: flex;
   justify-content: space-between;
   width: 400px;
+  margin-left: 100px;
 }
 .search {
   margin-top: 10px;
@@ -147,7 +169,7 @@ export default {
 }
 
 .logo {
-  width: 108px;
+  width: 130px;
   height: auto;
   font-size: 9px;
   letter-spacing: 1px;
@@ -156,7 +178,7 @@ export default {
 
 .blogo {
   margin: 0px;
-  width: 108px;
+  width: 130px;
   height: auto;
   margin-bottom: 4px;
 }

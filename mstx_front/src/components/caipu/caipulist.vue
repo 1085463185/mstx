@@ -33,7 +33,7 @@ export default {
   methods:{
     getkind(kind){
       console.log(kind)
-       this.$http.get("http://192.168.6.36:8000/showMenu",{
+       this.$http.get("http://localhost:8000/showMenu",{
          params:{
            kind:kind,
          }

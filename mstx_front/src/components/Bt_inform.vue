@@ -7,8 +7,6 @@
 			·
 			<router-link to="/">食材</router-link>
 			·
-			<router-link to="/">魔方</router-link>
-			·
 			<router-link to="/">关于我们</router-link>
 			·
 			<router-link to="/">联系我们</router-link>

@@ -2,7 +2,7 @@
 
   <div class="caipu">
     <recipheader></recipheader>
-    <btinform class="bottom"></btinform>
+    <btinform></btinform>
   </div>
 </template>
 <script>
@@ -11,14 +11,11 @@ import recipheader from "./recipheader.vue";
 
 export default {
   components: {
-    recipheader
+    recipheader,
+    btinform: () => import("@/components/shequ/btinform.vue"),
   },
 }
 </script>
 <style scoped>
-    .bottom{
-      position: relative;
-      bottom: 0;
-    }
 </style>
 

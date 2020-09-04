@@ -31,7 +31,7 @@
 		</div>
 		<el-button type="success" @click.native="zhuCe" class="zhuCe">注册</el-button>
 		</div>
-	</div>
+	
 </template>
 
 <script>
@@ -51,14 +51,14 @@
 		methods:{
 			zhuCe(){
 			
-				this.$http.post("http://192.168.6.36:8000/zhuce",{
+				this.$http.post("http://localhost:8000/zhuce",{
 					name:this.name,
 					tel:this.tel,
 					pwd:this.input1
 				}).then((res)=>{
 					alert(res.data.msg)
 					console.log(res.data)
-					this.$router.push("/login/user?id=1&name=用户名")
+					this.$router.push("/login/user")
 				}).catch((err)=>{
 					alert("用户名不存在")
 				})

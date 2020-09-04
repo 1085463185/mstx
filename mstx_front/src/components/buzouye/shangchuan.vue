@@ -36,7 +36,7 @@
 			return {
 				name: "",
 				sex: "",
-				flag: true,
+				flag: false,
 				desc: "",
 				fileList2: [],
 				fileSrc:"",
@@ -46,7 +46,7 @@
 			}
 		},
 		mounted() {
-			this.$http.get("http://192.168.6.36:8000/getAllFoodsList",{}).then((res)=>{
+			this.$http.get("http://localhost:8000/getAllFoodsList",{}).then((res)=>{
 				// console.log(res.data)
 				for(let i=0;i<res.data.length;i++){
 					this.cities.push(res.data[i].name)
@@ -62,7 +62,7 @@
 				this.flag = !this.flag
 			},
 			showMyCp(){
-				this.$http.post("http://192.168.6.36:8000/addCaiPu",{
+				this.$http.post("http://localhost:8000/addCaiPu",{
 					name:this.name,
 					sex:this.sex,
 					desc:this.desc,

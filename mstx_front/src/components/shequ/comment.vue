@@ -1,10 +1,12 @@
 <template>
 	<!-- 评论 -->
 	<div>
-		<div class="L0" v-for="item in array">
+		<div class="L0" v-for="(item,index) in array" :key="index">
 			<div class="L1" >
-				<img :src="item.headimg" alt="">
-				<span v-text="item.username"></span>
+				<div class="Ll">
+					<img :src="item.headimg" alt="">
+					<span v-text="item.username"></span>
+				</div>
 				<div class="L2" >
 					<span v-text="item.titles"></span><br>
 					<span></span>
@@ -33,7 +35,7 @@
 		mounted() {
 			console.log(1)
 			// console.log(sessionStorage.getItem('tel'))
-			this.$http.post('http://192.168.6.36:8000/getAllPingLun',{}).then((res)=>{
+			this.$http.post('http://localhost:8000/getAllPingLun',{}).then((res)=>{
 				console.log(res.data)
 				this.array = res.data.pinglun
 				this.uerArr = res.data.user
@@ -44,8 +46,6 @@
 						
 				}
 			})
-			
-			
 		}
 
 	}
@@ -63,13 +63,21 @@
 	.L1 {
 		position: relative;
 	}
-
-	.L1>img {
+	.Ll {
+		position: relative;
+		display: flex;
+		justify-content: left;
+		width: 300px;
+		height: 50px;
+		line-height: 50px;
+	}
+	.Ll>img {
 		position: relative;
 		width: 50px;
 		height: 50px;
 		border-radius: 50%;
 		overflow: hidden;
+		margin-right: 20px;
 	}
 
 	.L2 {

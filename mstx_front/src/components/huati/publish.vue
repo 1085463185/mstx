@@ -3,7 +3,7 @@
 		话题描述：<br>
 		<el-input v-model="kind" placeholder="请输入描述"></el-input>
 		话题图片：
-		<el-upload class="upload-demo" :on-success="getImg" action="http://192.168.6.36:8000/uploadFile" :on-preview="handlePreview"
+		<el-upload class="upload-demo" :on-success="getImg" action="http://localhost:8000/uploadFile" :on-preview="handlePreview"
 		 :on-remove="handleRemove" :file-list="fileList" list-type="picture">
 			<el-button size="small" type="primary">点击上传</el-button>
 			<div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过500kb</div>

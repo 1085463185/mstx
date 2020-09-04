@@ -43,6 +43,8 @@ export default {
         // 只有点击食材名字能触发
         this.$router.push(`shicailist?kind=${e.target.innerHTML}`);
 
+      } else {
+            this.$router.push(`/buzou?id=${e.target.id}`);
       }
     }
   }

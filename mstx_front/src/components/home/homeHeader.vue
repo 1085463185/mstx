@@ -46,7 +46,7 @@ export default {
           path = "/community";
           break;
         case "搜索":
-          path = "/search?kwd=";
+          path = "/search";
           break;
         // 点击到空白处不触发
         default:
@@ -71,7 +71,7 @@ export default {
   width: 990px;
   height: auto;
   margin:20px auto; 
-  margin-top: 60px;
+  margin-top: 20px;
   /* background-color: aquamarine; */
 }
 .header1 img{

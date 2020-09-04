@@ -19,8 +19,12 @@
           <button type="button">{{item.name}}</button>|
           <button type="button">登陆</button>
         </div>-->
+        <div class="dengluBox">
         <button class="denglu" type="button" v-html="this.yonghu.name1">{{yonghu.name1}}</button>
+        <button @click="exit" class="exit">退出登陆</button>
+        </div>
         <button type="button">{{yonghu.name2}}</button>
+       
       </div>
     </div>
   </div>
@@ -48,16 +52,24 @@ export default {
     }
     if (this.yonghu.name1 != "登陆") {
       let denglu = document.querySelector(".denglu");
-      denglu.onmouseover = function() {
+      let dengluBox = document.querySelector(".dengluBox");
+        let exit = document.querySelector(".exit");
+      dengluBox.onmouseover = function() {
         denglu.innerHTML = "切换登陆";
+        exit.style.display = "block"
       };
-      denglu.onmouseout = function() {
+      dengluBox.onmouseout = function() {
         denglu.innerHTML = `欢迎<span style='color:red;font-size:20px;margin-left:5px'>${myname}</span>`;
-      };
+       exit.style.display = "none"
+     };
     }
   },
 
   methods: {
+    exit(){
+      sessionStorage.clear()
+      this.$router.go(0)
+    },
     shouye() {
       this.ok = true;
     },
@@ -83,7 +95,7 @@ export default {
           path = "/search?kwd=";
           break;
         case "注册":
-          path = "/sign";
+          path = "/login/sign";
           break;
         case "登陆":
           path = "/login";
@@ -103,7 +115,7 @@ export default {
       }
       if (decodeURI(this.$route.fullPath) === path) {
         // 重复点击相同的按钮，不会push，直接刷新页面
-        // this.$router.go(0);
+        this.$router.go(0);
       } else {
         this.$router.push(path);
       }
@@ -111,22 +123,24 @@ export default {
   }
 };
 </script>
-<style >
+<style scoped>
 * {
   margin: 0;
   padding: 0;
 }
 #myheader {
   z-index: 100;
-  position: fixed;
-  top: 0px;
-  left: 0px;
   width: 100%;
   height: 40px;
   background-color: #333;
   box-sizing: border-box;
+  position: relative;
 }
+
 #myheader .myheader {
+  position: fixed;
+  top: 0px;
+  left: 0px;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -184,5 +198,18 @@ export default {
 }
 .myheaderRight button {
   width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
+.myheaderRight .exit{
+  position: absolute;
+  height: 40px;
+  width: 100px;
+  background-color: #333;
+
+  top: 39px;
+  display: none;
+}
+
 </style>

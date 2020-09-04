@@ -7,8 +7,8 @@ class BuZouService extends Service {
 	  
 	var result=await this.app.mysql.query(`select *  from step where menuId=${buzou.cid}`);
 	console.log(`select *  from step where menuId=${buzou.cid}`)
-	console.log("------+++++")
-	console.log(result)
+	// console.log("------+++++")
+	// console.log(result)
 	return result;
   }
 	async getImg(buzou) {
@@ -38,8 +38,8 @@ class BuZouService extends Service {
 		// 获取发布的菜品图片
 		async uploadGoods() {
 			const file = this.ctx.request.files[0];
-			console.log("file------------")
-			console.log(file)
+			// console.log("file------------")
+			// console.log(file)
 			const toFileName = '/public/upload/'+Date.now()+file.filename;
 			let to = path.dirname(__dirname)+toFileName;
 			await fs.copyFileSync(file.filepath, to);

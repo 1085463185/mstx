@@ -3,7 +3,7 @@ const Service = require('egg').Service;
 class User extends Service {
     async login(user) {
         var data = await this.app.mysql.query(`select id from user1 where usename = '${user.name}' and pwd='${user.pwd}'`);
-        console.log(data);
+        // console.log(data);
         return "登录--";
     }
     async caidanhome() {

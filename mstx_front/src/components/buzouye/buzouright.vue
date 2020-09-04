@@ -16,7 +16,7 @@
 			}
 		},
 		mounted() {
-			this.$http.post("http://192.168.6.36:8000/food",{
+			this.$http.post("http://localhost:8000/food",{
 				
 			}).then((res)=>{
 				console.log(res.data)

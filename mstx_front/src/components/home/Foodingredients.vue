@@ -50,19 +50,19 @@
                 var path;
                 switch (e.target.innerHTML.trim()) {
                     case "肉禽类":
-                        path:"";
+                        path = "";
                         break;
                     case "水产品":
-                        path:"";
+                        path = "";
                         break;
                     case "蔬菜":
-                        path:"";
+                        path = "";
                         break;
                     case "米面豆乳":
-                        path:"";
+                        path = "";
                         break;
                     case "食材首页":
-                        path:"";
+                        path = "/food";
                         break;
                     default:
                         return;

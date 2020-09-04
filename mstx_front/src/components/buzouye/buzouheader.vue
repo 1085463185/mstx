@@ -19,7 +19,6 @@
 	          <button type="button" class="listbtn">菜单</button>
 	          <button type="button" class="listbtn">排行</button>
 			   <button type="button" class="listbtn">食材</button>
-			    <button type="button" class="listbtn">食疗食补</button>
 	        </div>
 	        <div class="search">
 	          <input type="text" placeholder="请输入要搜索内容">
@@ -91,17 +90,19 @@
 	}
 	
 	.headerbtn {
-	
 	  display: flex;
 	  justify-content: space-between;
-	  width: 400px;
+	  width: 360px;
+	  height: 30px;
+	  margin-left: 100px;
+	  margin-top: 9px;
 	}
 	
-	.myheader button:nth-child(2){
+	.headerbtn button:nth-child(2){
 	  color: red;
 	}
 	.search{
-	  margin-top: 10px;
+	  margin-top: 13px;
 	  display: flex;
 	  height: 20px;
 	}
@@ -113,7 +114,6 @@
 	  font-size: 20px;
 	  cursor: pointer;
 	}
-	
 	
 	.ssbtn {
 	  border: none;
@@ -148,7 +148,7 @@
 	}
 	
 	.logo {
-	  width: 108px;
+	  width: 130px;
 	  height: auto;
 	  font-size: 9px;
 	  letter-spacing: 1px;
@@ -157,7 +157,7 @@
 	
 	.blogo {
 	  margin: 0px;
-	  width: 108px;
+	  width: 130px;
 	  height: auto;
 	  margin-bottom: 4px;
 	}

@@ -93,7 +93,7 @@ export default {
   },
   methods: {
     getlbtImg() {
-      this.$http.get("http://localhost:8000/showAllMenu", {}).then(res => {
+      this.$http.get("http://localhost:8000/showAllMenu1", {}).then(res => {
         // for(let i = 0; i < 6; i++){
         //   this.imgList.push(res.data[i]);
         // }
@@ -116,6 +116,7 @@ export default {
       var s = 0;
       console.log(this.posit1);
       if(this.posit1 == "-1000"){
+        clearInterval(this.timer);
         this.timer = setInterval(() => {
             this.posit1 = Number(this.posit1) + 20;
             this.posit2 = Number(this.posit2) + 20;
@@ -131,6 +132,7 @@ export default {
             this.myimg[8] = this.imgList[5].src;
           }
       } else if(this.posit1 == "0"){
+        clearInterval(this.timer);
         this.timer = setInterval(() => {
           this.posit1 = Number(this.posit1) + 20;
           this.posit3 = Number(this.posit3) + 20;
@@ -146,6 +148,7 @@ export default {
           this.myimg[5] = this.imgList[5].src;
         }
       } else if(this.posit1 == "1000"){
+        clearInterval(this.timer);
         this.timer = setInterval(() => {
             this.posit2 = Number(this.posit2) + 20;
             this.posit3 = Number(this.posit3) + 20;
@@ -257,7 +260,8 @@ export default {
       }
 
       if (decodeURI(this.$route.fullPath) === path) {
-        // 重复点击相同的按钮，不刷新页面
+        // 重复点击相同的按钮，不会push，直接刷新页面
+        this.$router.go(0);
       } else {
         this.$router.push(path);
       }

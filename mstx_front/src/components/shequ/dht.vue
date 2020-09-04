@@ -16,8 +16,8 @@
           <div class="headerbtn">
             <button type="button" class="listbtn">
               社区广场
-              <i></i>
-              <b></b>
+              <!-- <i></i>
+              <b></b> -->
             </button>
             <button type="button" class="listbtn">话题</button>
             <button type="button" class="listbtn">日志</button>
@@ -101,7 +101,7 @@ export default {
 .headerbtn {
   position: relative;
   margin-left: 200px;
-  margin-top: -7px;
+  margin-top: -8px;
   display: flex;
   justify-content: left;
   width: 350px;
@@ -182,16 +182,17 @@ export default {
 }
 
 .logo {
-  width: 108px;
+  width: 130px;
   height: auto;
   font-size: 9px;
   letter-spacing: 1px;
   cursor: pointer;
+  margin-right: 40px;
 }
 
 .blogo {
   margin: 0px;
-  width: 108px;
+  width: 130px;
   height: auto;
   margin-bottom: 4px;
 }

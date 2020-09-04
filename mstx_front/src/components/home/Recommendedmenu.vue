@@ -3,8 +3,8 @@
         <div class="menu">
             <div class="menutheme">
                 <div :class="themest1" @click="mtheme(0)">新秀菜谱</div>
-                <div :class="themest2" @click="mtheme(1)">一周热门</div>
-                <div :class="themest3" @click="mtheme(2)">最受欢迎的家常菜</div>
+                <!-- <div :class="themest2" @click="mtheme(1)">一周热门</div> -->
+                <!-- <div :class="themest3" @click="mtheme(2)">最受欢迎的家常菜</div> -->
             </div>
             <div class="menuclass" @click="tother">
                 <a>热菜</a>
@@ -19,9 +19,9 @@
         <div class="caidan">
             <div v-for="(item, index) in caidan" :key="index"  @click="joinBuZou">
                 <div class="caidan_juti">
-                    <img :src="item.src">
-                    <div class="caiming">{{item.name}}</div>
-                    <div class="caimiaosu">{{item.description}}</div>
+                    <img  :id="item.id" :src="item.src">
+                    <div class="caiming" :id="item.id">{{item.name}}</div>
+                    <div class="caimiaosu" :id="item.id">{{item.description}}</div>
                 </div>
             </div>
         </div>
@@ -51,7 +51,7 @@
         },
         methods: {
             joinBuZou(e){
-				console.log(e.target)
+				console.log(e.target.id)
 				this.$router.push(`/buzou?id=${e.target.id}`)
 			},
             mtheme(omt) {
@@ -73,22 +73,22 @@
                 var path;
                 switch (e.target.innerHTML.trim()) {
                     case "热菜":
-                        path = "/Varietyofdishes";
+                        path = "/recip/caipuhome/caipulist?kind=热菜";
                         break;
                     case "凉菜":
-                        path = "/liangcai";
+                        path = "/recip/caipuhome/caipulist?kind=凉菜";
                         break;
                     case "汤羹":
-                        path = "/tangao";
+                        path = "/recip/caipuhome/caipulist?kind=汤羹";
                         break;
                     case "主食":
-                        path = "/zhushi";
+                        path = "/recip/caipuhome/caipulist?kind=主食";
                         break;
                     case "小吃":
-                        path = "/xiaochi";
+                        path = "/recip/caipuhome/caipulist?kind=小吃";
                         break;
                     case "西餐":
-                        path = "/xican";
+                        path = "/recip/caipuhome/caipulist?kind=西餐";
                         break;
                     case "菜谱首页":
                         path = "/recip";

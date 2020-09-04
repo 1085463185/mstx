@@ -37,7 +37,7 @@
        
 		getAllCookbook(){
       
-		this.$http.get("http://192.168.6.36:8000/showAllcookbook",{
+		this.$http.get("http://localhost:8000/showAllcookbook",{
 			
 		}).then((res)=>{
          this.cookbookArr = res.data

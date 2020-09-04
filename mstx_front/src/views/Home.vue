@@ -2,7 +2,7 @@
   <div class="home">
     
     <!-- 头部导航 -->
-    <myheader></myheader>
+    <homeHeader></homeHeader>
 
     <!-- banner组件 -->
     <banner></banner>
@@ -28,7 +28,7 @@
   export default {
     name: 'Home',
     components: {
-      myheader:() => import("@/components/home/homeHeader.vue"),
+      homeHeader:() => import("@/components/home/homeHeader.vue"),
       banner: () => import( "@/components/home/Banner.vue"),
       briefitd: () => import("@/components/home/Briefitd.vue"),
       recommendedmenu: () => import("@/components/home/Recommendedmenu.vue"),

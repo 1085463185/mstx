@@ -2,7 +2,7 @@
   <div class="allsearch">
     <span>大家都在搜</span>
     <ul>
-      <li @click="capumenu" v-for="item in searchArr" v-text="item"></li>
+      <li @click="capumenu" v-for="(item,index) in searchArr" :key="index" v-text="item"></li>
     </ul>
   </div>
 </template>
@@ -21,7 +21,7 @@ export default {
     capumenu(e) {
 	Bus.$emit("getMenuname", e.target.innerHTML); 
       this.$http
-        .get("http://192.168.6.36:8000/showmenuByname", {
+        .get("http://localhost:8000/showmenuByname", {
           params: {
             keyword: e.target.innerHTML
           }

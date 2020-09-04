@@ -36,7 +36,7 @@ export default {
       // 跳转路由到首页
       
         this.$http
-          .post("http://192.168.6.36:8000/login", {
+          .post("http://localhost:8000/login", {
             params: {
               pwd: this.pwd,
               tel: this.tel
@@ -51,6 +51,7 @@ export default {
 			let myname = res.data.result[0].name
             if (res.data.status == 0) {
 			  this.$router.push(`/`);
+			   this.$router.go(0);
               sessionStorage.setItem("tel", this.tel);
               sessionStorage.setItem("name", myname);
              

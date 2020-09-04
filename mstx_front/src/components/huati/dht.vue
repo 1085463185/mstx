@@ -14,7 +14,7 @@
 						<div>我所有的朋友都是吃货</div>
 
 					</div>
-					<button type="button" class="t1">社区</button>
+					<button type="button" class="t1">话题</button>
 
 					<div class="headerbtn">
 						<button type="button" class="listbtn-shequ">社区广场</button>
@@ -68,15 +68,14 @@
 </script>
 <style scoped="scoped">
 	.t1 {
-		border-radius: 12px;
-		background-color: #ff6767;
-		height: 44px;
+		background-color: rgb(255, 103, 103);
+		height: 30px;
 		width: 60px;
-		font-size: 15px;
+		font-size: 20px;
+		color: #fff;
+		border-radius: 5px;
+		margin-top: 7px;
 		font-family: "微软雅黑";
-		position: relative;
-		right: 27px;
-
 	}
 
 	.header1 {
@@ -101,6 +100,7 @@
 	}
 
 	.headerbtn {
+		margin-top: 9px;
 		margin-left: 200px;
 		display: flex;
 		justify-content: space-between;
@@ -170,7 +170,7 @@
 	}
 
 	.logo {
-		width: 108px;
+		width: 130px;
 		height: auto;
 		font-size: 9px;
 		letter-spacing: 1px;
@@ -179,7 +179,7 @@
 
 	.blogo {
 		margin: 0px;
-		width: 108px;
+		width: 130px;
 		height: auto;
 		margin-bottom: 4px;
 	}

@@ -3,16 +3,17 @@
     <div id="nav">
     </div>
     
-    <!-- <homeheader></homeheader> -->
     <myheader></myheader>
-    <router-view></router-view>
-    <totop></totop>
+    <router-view/>
+    <!-- <totop></totop> -->
   </div>
 </template>
 
 <script>
   export default {
-  
+    components: {
+      myheader:() => import("@/components/myheader.vue"),
+    }
   }
 </script>
 

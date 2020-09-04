@@ -33,9 +33,9 @@ export default {
     },
     getkind(kind) {
       this.$http
-        .get("http://192.168.6.36:8000/showMenu", {
+        .get("http://localhost:8000/showMenu", {
           params: {
-            kind: kind
+            kind: kinde
           }
         })
         .then(res => {

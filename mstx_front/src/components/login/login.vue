@@ -26,7 +26,7 @@
  			  console.log(e.target.innerHTML)
  			  switch(e.target.innerHTML){
  			  	case "用户登录":path="/login/user";break;
- 			  	case "账号注册":path="/login/zhuce";break;
+ 			  	case "账号注册":path="/login/sign";break;
 				default:break;
  			  }
  			  if(decodeURI(this.$route.fullPath)===path){

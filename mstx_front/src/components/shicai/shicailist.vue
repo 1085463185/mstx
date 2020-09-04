@@ -33,7 +33,7 @@ export default {
     },
     getkind(foodname) {
       this.$http
-        .get("http://192.168.6.36:8000/showfoodByname", {
+        .get("http://localhost:8000/showfoodByname", {
           params: {
             foodname: foodname
           }
@@ -43,7 +43,7 @@ export default {
           this.food = res.data;
         });
       this.$http
-        .get("http://192.168.6.36:8000/showmenuByfood", {
+        .get("http://localhost:8000/showmenuByfood", {
           params: {
             foodname: foodname
           }

@@ -21,8 +21,9 @@ module.exports = app => {
   router.get("/showAllfood",controller.food.showAll);
   router.get("/showMenu",controller.sort.showAll);
   router.get("/showAllMenu",controller.sort.showAllMenu);
+  router.get("/showAllMenu1",controller.sort.showAllMenu1);
   router.get("/getAllFoodsList",controller.allFoods.showAll);
-  // 俞正理路由接口
+
   router.post('/caidanhome', controller.userc.caidanhome);
   router.post('/foodshome', controller.userc.foodshome);
   // 程悦接口制定
@@ -36,6 +37,11 @@ module.exports = app => {
    router.post('/delfood',controller.food.delfood);
    router.get('/allmenu',controller.menu.allmenu);
    router.post('/delmenu',controller.menu.delmenu);
- 
-   
+    router.post('/addadmin',controller.admin.addadmin);
+	router.post('/updatename',controller.admin.updateadmin);
+	router.post('/getadmin',controller.admin.getadmin);
+ // 郑智涵路由接口
+   router.post('/getAllPingLun',controller.pinglun.getAllPingLun);
+    router.post('/getUser',controller.pinglun.getUser);
+	 router.post('/addPingLun',controller.pinglun.addPingLun);
 };

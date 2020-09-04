@@ -34,6 +34,6 @@
 <style scoped="">
 	div{
 		width: 990px;
-		height: 400px;
+		height: auto;
 	}
 </style>

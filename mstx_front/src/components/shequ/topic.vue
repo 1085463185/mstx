@@ -13,11 +13,6 @@
 			</div>
 		</div>
 		
-		
-	
-		</div>
-		
-		
 	</div>
 		
 	
@@ -26,7 +21,7 @@
 <script>
 </script>
 
-<style>
+<style scoped>
 	.dd {
 		position: relative;
 		width: 900px;

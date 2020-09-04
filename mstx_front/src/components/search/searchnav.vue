@@ -12,8 +12,8 @@
       <el-menu-item index="4">专题</el-menu-item>
     </el-menu>
     <div class="search">
-      <input type="text" v-model="keyword" placeholder="搜索菜谱/食材或专题···" />
-      <button type="button" @click="search">搜索</button>
+      <input class="inputs" type="text" v-model="keyword" placeholder="搜索菜谱/食材或专题···" @keydown="huice" />
+      <button class="btns" type="button" @click="search">搜索</button>
     </div>
   </div>
 </template>
@@ -25,7 +25,7 @@ export default {
   data() {
     return {
       keyword: "",
-      status: 1,
+      status: "1",
       activeIndex: "1",
       activeIndex2: "1",
       caipuList: [],
@@ -59,7 +59,7 @@ export default {
     },
     showmenu() {
       this.$http
-        .get("http://192.168.6.36:8000/showmenuByname", {
+        .get("http://localhost:8000/showmenuByname", {
           params: {
             keyword: this.keyword
           }
@@ -76,7 +76,7 @@ export default {
     },
     showfood() {
       this.$http
-        .get("http://192.168.6.36:8000/showfoodByname", {
+        .get("http://localhost:8000/showfoodByname", {
           params: {
             foodname: this.keyword
           }
@@ -93,13 +93,21 @@ export default {
     },
     getcaipu() {
       Bus.$emit("getMenuList", this.caipuList);
+       Bus.$emit("getstatus", this.status);
     },
     getshicai() {
       Bus.$emit("getMenuList", this.shicaiList);
+         Bus.$emit("getstatus", this.status);
     },
     getmenu() {
       this.list = this.caipuList.concat(this.shicaiList);
       Bus.$emit("getMenuList", this.list);
+         Bus.$emit("getstatus", this.status);
+    },
+    huice(e) {
+      if(e.key == "Enter") {
+        this.search();
+      }
     },
     search() {
       
@@ -108,13 +116,13 @@ export default {
         if (this.status == "1") {
           this.showmenu();
           this.showfood();
-          Bus.$emit("getstatus", this.status);
+         
         } else if (this.status == "2") {
           this.showmenu();
-          Bus.$emit("getstatus", this.status);
+       
         } else if (this.status == "3") {
           this.showfood();
-          Bus.$emit("getstatus", this.status);
+       
         }
       } else return;
     }
@@ -129,20 +137,24 @@ export default {
   height: 120px;
 }
 .search {
+  position: relative;
   border: 2px solid #ff6767;
   /* padding: 0 10px; */
   margin-top: 8px;
   width: 640px;
   height: 40px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
 }
-input {
+.inputs {
   border: 0;
   outline: none;
   padding-left: 10px;
   width: 538px;
-  height: 34px;
+  height: 38px;
 }
-button {
+.btns {
   border: 0;
   background-color: #ff6767;
   color: white;

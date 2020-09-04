@@ -10,12 +10,24 @@ class sortService extends Service {
 		return list;
 	}
 	
-	//查询所有菜品
-	async getAllMenu(){
-		let sql = `select * from menu`
-		let list = await this.ctx.app.mysql.query(sql);
+	//分页查询菜谱
+	async getAllMenu1(caipu){
+		// let yema=(caipu.pagenum-1)*20
+		// console.log(yema)
+		// // let list = await this.ctx.app.mysql.query(`select * from menu limit ${yema},18`);
+		let list = await this.ctx.app.mysql.query(`select * from menu limit 0,18`);
 		return list;
+
 	}
+	async getAllMenu(caipu){
+		let yema=(caipu.pagenum-1)*12
+		// console.log(yema)
+		let count = await this.ctx.app.mysql.query(`select count(*)num from menu`);
+		let list = await this.ctx.app.mysql.query(`select * from menu limit ${yema},12`);
+		let result = {count,list}
+		return result;
+	}
+	
 	// 根据输入字段进行菜谱查询
 	async showmenuByname(menu){
 		// console.log(menu)
@@ -29,14 +41,14 @@ class sortService extends Service {
 		let result = await this.ctx.app.mysql.query(`select * from food where name ='${fo.foodname}'`);
 		console.log(result)
 		if(result.length==1){
-			console.log("--------")
+			// console.log("--------")
 			var result2=[]
 			var result1 = await this.ctx.app.mysql.query(`select * from zhongjian where foodid ='${result[0].id}'`)
 			console.log(result1)
 			for(let i = 0;i<result1.length;i++){
 				result2.push(result1[i].menuid)
 			}
-			console.log(result2)
+			// console.log(result2)
 			var result3 = await this.ctx.app.mysql.query(`select * from menu where id in(${result2.toString()})`)
 			var obj={
 				menu:result3

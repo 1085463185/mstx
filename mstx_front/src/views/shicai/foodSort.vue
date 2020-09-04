@@ -15,7 +15,7 @@
 	 
     </div>
 	<!-- 引入底部关于 -->
-	 <btinform class="bottom"></btinform>
+	 <btinform></btinform>
 	</div>
 
 </template>
@@ -27,6 +27,9 @@ export default {
       foodArr: ""
     };
   },
+  components: {
+    btinform: () => import("@/components/shequ/btinform.vue"),
+  },
   mounted() {
     this.getAllFoods();
   },
@@ -36,7 +39,7 @@ export default {
     },
     getAllFoods() {
       this.$http
-        .get("http://192.168.6.36:8000/showAllfood", {})
+        .get("http://localhost:8000/showAllfood", {})
         .then(res => {
           // console.log(res.data);
           this.foodArr = res.data;
@@ -50,10 +53,6 @@ export default {
 </script>
 
 <style scoped>
- .bottom{
-      position: relative;
-      bottom: 0;
-    }
 table {
  	 margin: 0 auto;
   width: 1000px;

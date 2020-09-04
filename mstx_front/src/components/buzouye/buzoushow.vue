@@ -72,7 +72,7 @@
 				console.log(cid)
 			})
 			// 插叙菜谱步鄹
-			this.$http.post("http://192.168.6.36:8000/buzou",{
+			this.$http.post("http://localhost:8000/buzou",{
 				cid:this.$route.query.id
 			}).then((res)=>{
 				console.log("------------")
@@ -80,7 +80,7 @@
 				this.buzouArr=res.data
 			})
 			// 查询需要展示的菜谱图片和描述
-			this.$http.post("http://192.168.6.36:8000/show",{
+			this.$http.post("http://localhost:8000/show",{
 				cid:this.$route.query.id
 			}).then((res)=>{
 				// console.log(res.data)
@@ -90,7 +90,7 @@
 				this.kind = res.data[0].kind
 			}),
 			// 通过中间表查询食材和用量
-			this.$http.post("http://192.168.6.36:8000/zhongjian",{
+			this.$http.post("http://localhost:8000/zhongjian",{
 				cid:this.$route.query.id
 			}).then((res)=>{
 				// console.log(res.data)
@@ -109,6 +109,8 @@
 		height: 34px;
 	}
 	.caiming{
+		display: flex;
+		justify-content: space-between;
 		width: 640px;
 		display: flex;
 		margin-top: 5px;
@@ -124,7 +126,17 @@
 	margin-left: 5px;
 	}
 	.user{
+		display: flex;
+		justify-content: space-between;
+		height: 35px;
+		width: 80px;
+		line-height: 35px;
+		margin-top: 15px;
+	}
+	.user>img {
 		width: 35px;
+		height: 35px;
+		border-radius: 50%;
 	}
 	.show{
 		width: 640px;

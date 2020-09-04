@@ -27,7 +27,7 @@ import foodsort from "../views/shicai/foodSort.vue"
 import shicailist from "@/components/shicai/shicailist.vue"
 
 // 邓智涵社区  话题
-import Shequ from '../views/shequ/Shequ.vue'
+import Shequ from '@/views/shequ/Shequ.vue'
 import Huati from '../views/huati/Huati.vue'
 import publish from '@/components/huati/publish.vue'
 
@@ -110,7 +110,7 @@ import publish from '@/components/huati/publish.vue'
     name:"self",
     component:login,
     redirect:"/login/user",
-    children:[{path:"user",component:userlogin},{path:"zhuce",component:zhuce}]
+    children:[{path:"user",component:userlogin},{path:"sign",component:zhuce}]
   },
   // 步骤
   {

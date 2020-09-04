@@ -15,7 +15,7 @@
       <el-upload
         class="upload-demo"
         :on-success="getImg"
-        action="http://192.168.6.36:8000/uploadFile"
+        action="http://localhost:8000/uploadFile"
         :on-preview="handlePreview"
         :on-remove="handleRemove"
         :file-list="fileList"
@@ -60,7 +60,7 @@ export default {
     },
     getuseInform() {
       this.$http
-        .post("http://192.168.6.36:8000/getadmin", {
+        .post("http://localhost:8000/getadmin", {
           id: this.yhid,
           sta: 1
         })
@@ -85,7 +85,7 @@ export default {
     sure() {
       if (this.name && this.label) {
         this.$http
-          .post("http://192.168.6.36:8000/updatename", {
+          .post("http://localhost:8000/updatename", {
             sta: 3,
             id: this.yhid,
             name: this.name,
@@ -95,6 +95,8 @@ export default {
           .then(res => {
             // console.log(res.data);
             alert("修改成功");
+            sessionStorage.setItem("name",this.name)
+            this.$router.go(0);
             this.getuseInform();
             let updateBox = document.querySelector(".update");
             updateBox.style.display = "none";
@@ -108,6 +110,7 @@ export default {
 </script>
 
 <style scoped="">
+
 div {
   margin: 15px;
   width: 50vw;
@@ -144,6 +147,7 @@ div {
   padding: 10px;
 }
 .yhxinxi img{
+   border: 1px solid #ccc;
     width: 100px;
     height: 100px;
     border-radius: 100px;

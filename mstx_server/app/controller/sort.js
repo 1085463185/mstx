@@ -13,8 +13,12 @@ class SortController extends Controller {
   
   //查询所有菜品
   async showAllMenu() {
-  		let menuList = await this.ctx.service.sort.getAllMenu();
-   		this.ctx.response.body = menuList;
+	  const { ctx } = this;
+	   	ctx.body=await this.ctx.service.sort.getAllMenu(ctx.request.query);
+  }
+  async showAllMenu1() {
+	  const { ctx } = this;
+	   	ctx.body=await this.ctx.service.sort.getAllMenu1(ctx.request.query);
   }
   // 搜索查询
   async showmenuByname() {

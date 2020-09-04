@@ -3,7 +3,7 @@ const Service = require('egg').Service;
 
 class UserService extends Service {
   async login(user) {
-	  console.log(user)
+	  // console.log(user)
 	var result=await this.app.mysql.query(`select *  from user1 where usename=${user.params.tel}`);
 	if(result.length<1){
 		return {
@@ -14,6 +14,7 @@ class UserService extends Service {
 		
 		if(user.params.pwd==result[0].pwd){
 			return {
+				result:result,
 				status:0,
 				msg:"恭喜您，登陆成功"
 			}
@@ -27,8 +28,8 @@ class UserService extends Service {
 
   }
   async maglogin(user) {
-  	  console.log(user)
-  	var result=await this.app.mysql.query(`select *  from user2 where usename=${user.params.tel}`);
+  	  // console.log(user)
+  	var result=await this.app.mysql.query(`select *  from user2 where usename=${user.usename}`);
   	if(result.length<1){
   		return {
   			status:1,
@@ -36,8 +37,9 @@ class UserService extends Service {
   		}
   	}else{
   		
-  		if(user.params.pwd==result[0].pwd){
+  		if(user.pwd==result[0].pwd){
   			return {
+				id:result[0].id,
   				status:0,
   				msg:"恭喜您，登陆成功"
   			}
@@ -50,7 +52,7 @@ class UserService extends Service {
   	}
   }
    async zhuCe(user) {
-	   console.log(user)
+	   // console.log(user)
 	   
   var result=await this.app.mysql.query(`insert into user1(usename,pwd,name)values(${user.tel},"${user.pwd}","${user.name}")`);
     
