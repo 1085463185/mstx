@@ -1,0 +1,20 @@
+2020-09-05 00:00:01,021 INFO 15832 [egg-logrotator] app logger reload: got log-reload message
+2020-09-05 10:34:47,796 INFO 14592 [egg:logger] init all loggers with options: {"dir":"D:\\hqyj\\Webpack\\vuew\\mstx_server\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-09-05 10:34:47,869 INFO 14592 [egg-multipart] file mode enable
+2020-09-05 10:34:47,869 INFO 14592 [egg-multipart] will save temporary files to "C:\\Users\\yuzhenli\\AppData\\Local\\Temp\\egg-multipart-tmp\\mysql", cleanup job cron: "0 30 4 * * *"
+2020-09-05 10:34:47,870 INFO 14592 [egg-mysql] connecting root@localhost:3306/vue
+2020-09-05 10:34:50,567 INFO 14592 [egg-static] starting static serve /public/ -> D:\hqyj\Webpack\vuew\mstx_server\app\public
+2020-09-05 10:34:50,611 INFO 14592 [egg-security] use methodnoallow middleware
+2020-09-05 10:34:50,613 INFO 14592 [egg-security] use noopen middleware
+2020-09-05 10:34:50,619 INFO 14592 [egg-security] use nosniff middleware
+2020-09-05 10:34:50,621 INFO 14592 [egg-security] use xssProtection middleware
+2020-09-05 10:34:50,624 INFO 14592 [egg-security] use xframe middleware
+2020-09-05 10:34:50,626 INFO 14592 [egg-security] use dta middleware
+2020-09-05 10:34:50,626 INFO 14592 [egg-security] compose 6 middlewares into one security middleware
+2020-09-05 10:34:50,745 INFO 14592 [egg:core] dump config after load, 45ms
+2020-09-05 10:34:50,783 INFO 14592 [egg-watcher:application] watcher start success
+2020-09-05 10:34:50,815 INFO 14592 [egg-mysql] instance[0] status OK, rds currentTime: Sat Sep 05 2020 10:34:50 GMT+0800 (GMT+08:00)
+2020-09-05 10:34:50,833 INFO 14592 [egg:core] dump config after ready, 15ms
+2020-09-05 11:12:01,268 WARN 14592 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-09-05 12:22:08,351 WARN 14592 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2020-09-05 12:22:08,391 WARN 14592 [ClusterClient:Watcher] follower closed, and try to init it again

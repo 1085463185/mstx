@@ -8,6 +8,7 @@
 			<buzouright></buzouright>
 		</div>
 		<shangchuan></shangchuan>
+		<btinform></btinform>
 	</div>
 	
 </template>
@@ -22,7 +23,8 @@
 			buzouheader,
 			buzoushow,
 			buzouright,
-			shangchuan
+			shangchuan,
+			btinform: () => import("@/components/shequ/btinform.vue"),
 		}
 	}
 </script>

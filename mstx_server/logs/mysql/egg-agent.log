@@ -1,0 +1,27 @@
+2020-09-05 00:00:01,023 INFO 6188 [egg-logrotator] agent logger reload: got log-reload message
+2020-09-05 10:34:41,791 INFO 7480 [egg:logger] init all loggers with options: {"dir":"D:\\hqyj\\Webpack\\vuew\\mstx_server\\logs\\mysql","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"mysql-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-09-05 10:34:41,865 INFO 7480 [egg:core] dump config after load, 61ms
+2020-09-05 10:34:42,443 INFO 7480 [egg-watcher] Start watching: ["D:\\hqyj\\Webpack\\vuew\\mstx_server\\app","D:\\hqyj\\Webpack\\vuew\\mstx_server\\config","D:\\hqyj\\Webpack\\vuew\\mstx_server\\mocks","D:\\hqyj\\Webpack\\vuew\\mstx_server\\mocks_proxy","D:\\hqyj\\Webpack\\vuew\\mstx_server\\app.js"]
+2020-09-05 10:34:42,443 INFO 7480 [egg-watcher] Start watching: "D:\\hqyj\\Webpack\\vuew\\mstx_server\\app"
+2020-09-05 10:34:42,445 INFO 7480 [egg-watcher] Start watching: "D:\\hqyj\\Webpack\\vuew\\mstx_server\\config"
+2020-09-05 10:34:42,445 INFO 7480 [egg-watcher] Start watching: "D:\\hqyj\\Webpack\\vuew\\mstx_server\\mocks"
+2020-09-05 10:34:42,446 INFO 7480 [egg-watcher] Start watching: "D:\\hqyj\\Webpack\\vuew\\mstx_server\\mocks_proxy"
+2020-09-05 10:34:42,446 INFO 7480 [egg-watcher] Start watching: "D:\\hqyj\\Webpack\\vuew\\mstx_server\\app.js"
+2020-09-05 10:34:42,448 INFO 7480 [egg-watcher:agent] watcher start success
+2020-09-05 10:34:42,521 INFO 7480 [egg:core] dump config after ready, 17ms
+2020-09-05 11:12:03,440 ERROR 7480 nodejs.ClusterClientNoResponseError: client no response in 890041ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\hqyj\Webpack\vuew\mstx_server\node_modules\_cluster-client@3.0.1@cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 7480
+hostname: LAPTOP-7S7JCR14
+
+2020-09-05 12:22:08,380 ERROR 7480 nodejs.ClusterClientNoResponseError: client no response in 3224588ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\hqyj\Webpack\vuew\mstx_server\node_modules\_cluster-client@3.0.1@cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 7480
+hostname: LAPTOP-7S7JCR14
+

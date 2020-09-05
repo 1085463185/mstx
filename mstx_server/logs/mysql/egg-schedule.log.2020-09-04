@@ -1,0 +1,132 @@
+2020-08-30 10:45:54,091 INFO 2916 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 63845911ms at 2020-08-31 04:30:00.002
+2020-08-30 10:45:54,092 INFO 2916 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 47645909ms at 2020-08-31 00:00:00.001
+2020-08-30 10:45:54,092 INFO 2916 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 47646908ms at 2020-08-31 00:00:01.000
+2020-08-30 10:45:53,707 INFO 10096 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-08-30 10:45:53,707 INFO 10096 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-08-30 10:45:53,707 INFO 10096 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-08-30 10:49:47,621 INFO 17288 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-08-30 10:49:47,621 INFO 17288 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-08-30 10:49:47,621 INFO 17288 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-08-30 10:53:31,126 INFO 3416 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 63388876ms at 2020-08-31 04:30:00.002
+2020-08-30 10:53:31,127 INFO 3416 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 47188873ms at 2020-08-31 00:00:00.000
+2020-08-30 10:53:31,127 INFO 3416 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 47189873ms at 2020-08-31 00:00:01.000
+2020-08-30 10:53:30,822 INFO 4104 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-08-30 10:53:30,822 INFO 4104 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-08-30 10:53:30,822 INFO 4104 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-08-30 11:09:38,171 INFO 12208 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-08-30 11:09:38,171 INFO 12208 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-08-30 11:09:38,171 INFO 12208 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-08-30 11:19:19,730 INFO 1300 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 61840273ms at 2020-08-31 04:30:00.003
+2020-08-30 11:19:19,730 INFO 1300 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 45640270ms at 2020-08-31 00:00:00.000
+2020-08-30 11:19:19,730 INFO 1300 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 45641270ms at 2020-08-31 00:00:01.000
+2020-08-30 11:19:19,395 INFO 8500 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-08-30 11:19:19,395 INFO 8500 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-08-30 11:19:19,395 INFO 8500 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-08-31 22:23:06,175 INFO 1948 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-08-31 22:23:06,175 INFO 1948 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-08-31 22:23:06,175 INFO 1948 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-08-31 22:23:07,159 INFO 9532 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 22012844ms at 2020-09-01 04:30:00.003
+2020-08-31 22:23:07,159 INFO 9532 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 5812841ms at 2020-09-01 00:00:00.000
+2020-08-31 22:23:07,159 INFO 9532 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 5813841ms at 2020-09-01 00:00:01.000
+2020-09-01 09:08:11,724 INFO 7392 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-09-01 09:08:11,724 INFO 7392 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-09-01 09:08:11,724 INFO 7392 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-09-01 09:08:12,888 INFO 16168 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 69707115ms at 2020-09-02 04:30:00.003
+2020-09-01 09:08:12,888 INFO 16168 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 53507112ms at 2020-09-02 00:00:00.000
+2020-09-01 09:08:12,889 INFO 16168 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 53508112ms at 2020-09-02 00:00:01.000
+2020-09-01 09:45:50,754 INFO 17544 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-09-01 09:45:50,754 INFO 17544 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-09-01 09:45:50,754 INFO 17544 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-09-01 09:46:36,621 INFO 9788 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-09-01 09:46:36,621 INFO 9788 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-09-01 09:46:36,621 INFO 9788 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-09-01 09:46:45,383 INFO 16376 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-09-01 09:46:45,383 INFO 16376 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-09-01 09:46:45,383 INFO 16376 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-09-01 09:48:32,790 INFO 3944 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-09-01 09:48:32,790 INFO 3944 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-09-01 09:48:32,790 INFO 3944 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-09-01 10:02:11,656 INFO 1480 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-09-01 10:02:11,656 INFO 1480 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-09-01 10:02:11,656 INFO 1480 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-09-01 18:27:22,725 INFO 964 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-09-01 18:27:22,725 INFO 964 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-09-01 18:27:22,725 INFO 964 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-09-01 18:27:23,685 INFO 18428 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 36156317ms at 2020-09-02 04:30:00.002
+2020-09-01 18:27:23,686 INFO 18428 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 19956314ms at 2020-09-02 00:00:00.000
+2020-09-01 18:27:23,686 INFO 18428 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 19957314ms at 2020-09-02 00:00:01.000
+2020-09-01 22:15:53,236 INFO 16856 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-09-01 22:15:53,236 INFO 16856 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-09-01 22:15:53,236 INFO 16856 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-09-01 22:15:54,317 INFO 6652 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 22445685ms at 2020-09-02 04:30:00.002
+2020-09-01 22:15:54,317 INFO 6652 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 6245683ms at 2020-09-02 00:00:00.000
+2020-09-01 22:15:54,318 INFO 6652 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 6246683ms at 2020-09-02 00:00:01.001
+2020-09-02 09:24:27,542 INFO 13252 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-09-02 09:24:27,542 INFO 13252 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-09-02 09:24:27,542 INFO 13252 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-09-02 09:24:30,770 INFO 17160 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 68729232ms at 2020-09-03 04:30:00.002
+2020-09-02 09:24:30,770 INFO 17160 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 52529230ms at 2020-09-03 00:00:00.000
+2020-09-02 09:24:30,771 INFO 17160 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 52530230ms at 2020-09-03 00:00:01.001
+2020-09-03 08:57:56,326 INFO 9532 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-09-03 08:57:56,326 INFO 9532 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-09-03 08:57:56,326 INFO 9532 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-09-03 08:57:58,881 INFO 900 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 70321124ms at 2020-09-04 04:30:00.005
+2020-09-03 08:57:58,882 INFO 900 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 54121119ms at 2020-09-04 00:00:00.001
+2020-09-03 08:57:58,883 INFO 900 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 54122118ms at 2020-09-04 00:00:01.000
+2020-09-03 21:24:21,460 INFO 15948 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-09-03 21:24:21,460 INFO 15948 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-09-03 21:24:21,460 INFO 15948 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-09-03 21:24:23,494 INFO 10552 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 25536508ms at 2020-09-04 04:30:00.002
+2020-09-03 21:24:23,494 INFO 10552 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 9336506ms at 2020-09-04 00:00:00.000
+2020-09-03 21:24:23,494 INFO 10552 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 9337506ms at 2020-09-04 00:00:01.000
+2020-09-04 15:40:40,521 INFO 14048 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-09-04 15:40:40,521 INFO 14048 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-09-04 15:40:40,521 INFO 14048 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-09-04 15:40:42,938 INFO 16896 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 46157065ms at 2020-09-05 04:30:00.003
+2020-09-04 15:40:42,939 INFO 16896 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 29957062ms at 2020-09-05 00:00:00.001
+2020-09-04 15:40:42,939 INFO 16896 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 29958061ms at 2020-09-05 00:00:01.000
+2020-09-04 16:10:18,275 INFO 18696 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 44381728ms at 2020-09-05 04:30:00.003
+2020-09-04 16:10:18,275 INFO 18696 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 28181725ms at 2020-09-05 00:00:00.000
+2020-09-04 16:10:18,275 INFO 18696 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 28182725ms at 2020-09-05 00:00:01.000
+2020-09-04 16:10:17,916 INFO 7964 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-09-04 16:10:17,916 INFO 7964 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-09-04 16:10:17,916 INFO 7964 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-09-04 16:15:13,719 INFO 10600 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-09-04 16:15:13,719 INFO 10600 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-09-04 16:15:13,719 INFO 10600 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-09-04 16:15:23,194 INFO 17644 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-09-04 16:15:23,194 INFO 17644 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-09-04 16:15:23,194 INFO 17644 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-09-04 16:15:51,675 INFO 14236 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-09-04 16:15:51,676 INFO 14236 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-09-04 16:15:51,676 INFO 14236 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-09-04 16:39:17,592 INFO 4880 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-09-04 16:39:17,592 INFO 4880 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-09-04 16:39:17,592 INFO 4880 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-09-04 16:39:36,790 INFO 4820 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-09-04 16:39:36,790 INFO 4820 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-09-04 16:39:36,790 INFO 4820 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-09-04 19:36:48,776 INFO 18676 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-09-04 19:36:48,776 INFO 18676 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-09-04 19:36:48,776 INFO 18676 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-09-04 19:50:19,122 INFO 5900 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-09-04 19:50:19,122 INFO 5900 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-09-04 19:50:19,122 INFO 5900 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-09-04 19:50:59,006 INFO 19364 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-09-04 19:50:59,006 INFO 19364 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-09-04 19:50:59,006 INFO 19364 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-09-04 19:51:04,180 INFO 2548 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-09-04 19:51:04,180 INFO 2548 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-09-04 19:51:04,180 INFO 2548 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-09-04 21:25:54,639 INFO 6188 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 25445363ms at 2020-09-05 04:30:00.002
+2020-09-04 21:25:54,639 INFO 6188 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 9245361ms at 2020-09-05 00:00:00.000
+2020-09-04 21:25:54,639 INFO 6188 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 9246361ms at 2020-09-05 00:00:01.000
+2020-09-04 21:25:54,264 INFO 15832 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-09-04 21:25:54,264 INFO 15832 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-09-04 21:25:54,264 INFO 15832 [egg-schedule]: register schedule D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-09-05 00:00:00,029 INFO 15832 [Job#159923520000894531620833991] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js executing by app
+2020-09-05 00:00:00,036 INFO 15832 [Job#159923520000894531620833991] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js execute succeed, used 6ms
+2020-09-05 00:00:00,016 INFO 6188 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 86399989ms at 2020-09-06 00:00:00.004
+2020-09-05 00:00:01,002 INFO 15832 [Job#159923520100194541544192001] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js executing by app
+2020-09-05 00:00:01,017 INFO 15832 [Job#159923520100194541544192001] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js execute succeed, used 15ms
+2020-09-05 00:00:01,005 INFO 6188 [Timer] D:\hqyj\Webpack\vuew\mstx_server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 86399999ms at 2020-09-06 00:00:01.004
